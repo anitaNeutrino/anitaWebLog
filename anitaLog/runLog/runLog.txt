@@ -1,0 +1,1643 @@
+2030	UH	NO ROOT FILE				Ryan 	Just testing if this script works
+2031	UH	NO ROOT FILE				Ryan	Pedestal Run?
+2033	UH	NO ROOT FILE				Ryan	Should be a data run with 200 software triggered events
+2034	UH	NO ROOT FILE				Ryan	Short run take N
+2035	UH	NO ROOT FILE				Ryan	Short run take N+1
+2036	UH	NO ROOT FILE				Ryan	Short run take N+M
+2037	UH	NO ROOT FILE				Ryan	Short run take N+M+1
+2038	UH	NO ROOT FILE				Ryan	Short run take N+M+2
+2039	UH	NO ROOT FILE				Ryan	Short run take N+M+3
+2041	UH	NO ROOT FILE				Ryan	Longer run, software triggers
+2042	UH	NO ROOT FILE				Ryan	Longer run, enabled chan servo
+2043	UH	2008-04-19 17:28:44	2008-04-19 17:28:44	7107	7107	Ryan	Longer run, set thresholds to 3700
+2044	UH	2008-04-20 13:23:04	2008-04-20 13:23:04	7108	7109	Ryan	Trying a 10 SURF software triggered run
+2045	UH	2008-04-20 13:25:17	2008-04-20 13:25:17	7110	7111	Ryan	Changed TURF readout to shorts
+2046	UH	2008-04-20 13:26:52	2008-04-20 13:27:11	7112	7763	Ryan	Changed sleep time to zero
+2047	UH	NO ROOT FILE				Ryan	Trying short pedestal run. I think
+2048	UH	NO ROOT FILE				Ryan	Trying short pedestal run. Might atcually be one this time
+2050	UH	NO ROOT FILE				Ryan	Threshold Scan. No idea what critirea
+2052	UH	NO ROOT FILE				Ryan	Short software triggered run
+2053	UH	NO ROOT FILE				Ryan	Short software triggered run
+2054	UH	2008-04-21 17:10:36	2008-04-21 17:11:07	3405	4405	Ryan	Short software triggered run (but might atcually write the events)
+2055	UH	NO ROOT FILE				Patrick	Test run on 04/21/2008.
+2056	UH	NO ROOT FILE				Patrick	Test run 2 4/21/08
+2057	UH	NO ROOT FILE				Patrick	Test run 3 4/21/08
+2058	UH	NO ROOT FILE				Patrick	test run 4 04/21/08
+2059	UH	NO ROOT FILE				Patrick	test run 5 04/21/08
+2060	UH	NO ROOT FILE				Patrick	sigh, test run 6 04/21/08
+2061	UH	NO ROOT FILE				Ryan	Threshold Scan Run with SURFs in old ANITA 1 positions (i.e. with two gaps and the addition of SURF 10 on the first backplane)
+2063	UH	NO ROOT FILE				Ryan	Pedestal run with 10 SURFs and 4000 events
+2065	UH	NO ROOT FILE				Ryan	Pedestal run with 10 SURFs and 4000 events -- Take 2
+2066	UH	NO ROOT FILE				Ryan	Short Ped run 10 SURFs
+2068	UH	NO ROOT FILE				Ryan	Short Ped run 10 SURFs
+2070	UH	2008-04-25 13:57:05	2008-04-25 13:57:01	1000	803	Ryan	Longer run with software trigger (10 SURFs, 1000 events)
+2071	UH	NO ROOT FILE				Ryan	Pedestal run
+2072	UH	NO ROOT FILE				Ryan	ThresholdScan (I think)
+2074	UH	NO ROOT FILE				Ryan	Short (400 events) pedestal run
+2075	UH	2008-04-28 10:19:47	2008-04-28 10:19:57	402	802	Ryan	Short (400 events) data run with software tirggers
+2076	UH	NO ROOT FILE				Ryan	Trying to take a run with the RF trigger. Doubt it will work.
+2077	UH	NO ROOT FILE				Ryan	Trying to take a run with the RF trigger. Doubt it will work. Still won't work though.
+2078	UH	2008-04-28 14:40:51	2008-04-28 14:40:47	1000	998	Ryan	Trying to take a run with the RF trigger, sending software tiggers every second. Will it work?
+2079	UH	2008-04-28 15:05:10	2008-04-28 15:11:49	1206	1606	Ryan	I've forgotten
+2080	UH	2008-04-28 17:33:30	2008-04-28 17:33:55	1607	1613	Ryan	Run looking at GPIO values
+2081	UH	NO ROOT FILE				Ryan	More playing with GPIOs
+2082	UH	NO ROOT FILE				Ryan	Yet another threshold scan
+2083	UH	2008-04-28 17:53:48	2008-04-28 17:59:48	1623	1696	Ryan	Still trying to get the RF trigger mode working
+2084	UH	NO ROOT FILE				Ryan	Test run with sleep inserted after we've found the evt_ready flag. Shouldn't make a difference
+2085	UH	NO ROOT FILE				Ryan	Once more with feeling
+2086	UH	NO ROOT FILE				Ryan	Once more with feeling again
+2087	UH	NO ROOT FILE				Ryan	Nichol
+2088	UH	2008-04-28 18:22:05	2008-04-28 18:29:29	1824	2047	Ryan	Trying to look at some TURF rate data
+2089	UH	2008-04-28 18:30:05	2008-04-28 18:30:47	2048	2049	Ryan	Very verbose run for debugging
+2090	UH	NO ROOT FILE				Ryan	Trying the channel servo to see if we get any l1Rates
+2091	UH	2008-04-28 18:43:30	2008-04-28 18:49:08	2140	2310	Ryan	Arrggh
+2092	UH	2008-04-28 20:22:13	2008-04-28 20:23:27	2311	2387	Ryan	Trying G12 PPS triggered run
+2093	UH	2008-04-28 20:36:48	2008-04-28 20:37:58	2388	2639	Ryan	The PPS input should be on the ADU5. ADU5 and software triggers (0.5Hz) are enabled
+2102	Pal.	NO ROOT FILE				Kim	3rd try in crate trying to have losd
+2108	UH	NO ROOT FILE				Ryan	Threshold scan with 100 points
+2109	UH	2002-01-01 09:05:54	2002-01-01 09:06:43	27041	28780	Ryan	Pedestal Run
+2110	UH	2002-01-01 09:07:19	2002-01-01 09:09:10	28781	32780	Ryan	Pedestal Run
+2111	UH	2008-05-04 11:59:41	2008-05-04 12:01:11	32781	36780	Ryan	Pedestal Run
+2112	UH	2008-05-04 12:06:09	2008-05-04 12:19:21	36781	37181	Ryan	Run with soft + RF triggers
+2113	UH	2008-05-04 12:27:13	2008-05-04 12:27:25	37182	37189	Ryan	Run with soft + RF triggers (tried turning the GPS on)
+2114	UH	NO ROOT FILE				Ryan	Testing
+2115	UH	NO ROOT FILE				Kim	5/4 Sunday afternoon run started
+2116	UH	NO ROOT FILE				Ryan	A run of some description
+2117	UH	NO ROOT FILE				Ryan	Short Run
+2118	UH	NO ROOT FILE				Ryan	Slightly longer run with soft + GPS + RF
+2119	UH	NO ROOT FILE				Ryan	Pedestal Run to test power usage
+2120	UH	NO ROOT FILE				Ryan	Trying a G12 triggered run
+2121	UH	NO ROOT FILE				Ryan	Trying ADU5 triggered run
+2122	UH	NO ROOT FILE				Ryan	Nichol
+2123	UH	NO ROOT FILE				Ryan	Enabled software triggers
+2124	UH	NO ROOT FILE				Ryan	RF Triggers??
+2125	UH	NO ROOT FILE				Ryan	Setting global threshold to 4000
+2126	UH	2008-05-05 12:26:46	2008-05-05 12:31:04	46781	47350	Ryan	ADU5 Triggered run
+2127	UH	2008-05-05 12:44:45	2008-05-05 12:47:55	47351	48068	Ryan	Switching back to the chan servo
+2128	UH	2008-05-06 09:02:08	2008-05-06 09:07:15	48069	48697	Ryan	Run with G12 trigger and RF trigger (servo at 6000)
+2129	UH	NO ROOT FILE				Ryan	Run with G12 trigger and RF trigger (servo at 6000)
+2130	UH	NO ROOT FILE				Ryan	ThresholdScan
+2131	UH	NO ROOT FILE				Ryan	Silly run trying to use both servos
+2132	UH	NO ROOT FILE				Ryan	G12 + RF trigger. Global threshold at 3350
+2133	UH	NO ROOT FILE				Ryan	G12 + RF trigger. Global threshold at 3r4350
+2134	UH	NO ROOT FILE				Ryan	G12 + RF trigger. Global threshold at 3550
+2135	UH	NO ROOT FILE				Ryan	G12 + RF trigger. Global threshold at whatever, truning hcan servo on
+2136	UH	NO ROOT FILE				Ryan	First run using inotify. I wonder what will have broken
+2137	UH	2008-05-06 17:17:56	2008-05-06 17:22:37	51692	54567	Ryan	G12 (10Hz) + RF,
+2138	UH	2008-05-06 19:26:14	2008-05-06 19:31:27	55693	58900	Kim	first in EI chamber
+2139	UH	2008-05-06 19:50:12	2008-05-06 19:54:51	59694	62537	Patrick	test in EMI chamber 2
+2140	UH	2008-05-06 19:57:24	2008-05-06 20:02:00	63695	66513	Patrick	EMI 3
+2141	UH	2008-05-06 20:05:01	2008-05-06 20:10:05	67696	70798	Patrick	EMI 4
+2142	UH	2008-05-06 20:39:37	2008-05-06 20:45:03	71697	75046	Kim	slowrate test in anechoic chamber with SIP
+2143	UH	2008-05-06 21:18:10	2008-05-06 21:23:28	75698	78960	Kim	next low rate test with SIP
+2144	UH	2008-05-06 21:35:43	2008-05-06 21:42:15	79699	83699	Kim	next lowrate test
+2146	UH	2008-05-08 08:22:52	2008-05-08 08:24:30	83701	85298	Ryan	Fixed the disk mounting problem
+2147	UH	NO ROOT FILE				Ryan	Long Threshold Scan with Shorts turned on (and maybe RFCMs as well)
+2148	UH	2008-05-08 08:50:46	2008-05-08 08:51:47	86099	88644	Ryan	Pedestal Run (4000 entries I think)
+2149	UH	2008-05-08 09:08:11	2008-05-08 09:38:54	90099	92047	Ryan	G12 PPS trig on (1Hz)  Chan Servo on with pid goal = 3MHz
+2150	UH	2008-05-08 09:50:14	2008-05-08 10:03:58	92394	93309	Ryan	G12 PPS trig on (1Hz)  Chan Servo on with pid goal = 5MHz
+2151	UH	2008-05-08 10:08:39	2008-05-08 10:12:59	93577	93947	Ryan	G12 PPS trig on (1Hz)  Chan Servo on with pid goal = 6MHz
+2152	UH	2008-05-08 10:16:23	2008-05-08 10:18:55	94049	94267	Ryan	G12 PPS trig on (1Hz)  Chan Servo on with pid goal = 6MHz  -- Tried to change RFCM relays
+2153	UH	2008-05-08 10:20:26	2008-05-08 10:31:27	94340	95439	Ryan	G12 PPS trig on (1Hz)  Chan Servo on with pid goal = 9MHz 
+2154	UH	2008-05-08 10:51:07	2008-05-08 11:11:45	95501	99501	Ryan	G12 PPS trig on (1Hz)  Chan Servo on with pid goal = 9MHz  -- Now using inotify everywhere
+2155	UH	2008-05-08 12:14:51	2008-05-08 12:14:51	100000	99999	Ryan	G12 PPS trig on (1Hz)  Chan Servo on with pid goal = 9MHz  -- Now using inotify everywhere -- And a new version of GPDs
+2156	UH	2008-05-08 13:16:16	2008-05-08 13:23:45	103701	105505	Ryan	G12 PPS trig on (1Hz)  Fixed thresholds tuned to 3MHz in each channel. We'll see
+2157	UH	NO ROOT FILE				Ryan	G12 PPS trig on (1Hz)  Fixed thresholds tuned to 3MHz in each channel. We'll see
+2158	UH	NO ROOT FILE				Ryan	Running CPUPROFILE on Acqd
+2159	UH	NO ROOT FILE				Ryan	Nothing run 
+2160	UH	NO ROOT FILE				Ryan	G12 PPS trig on (1Hz)  Fixed thresholds tuned to 3MHz in each channel. We'll see
+2161	UH	NO ROOT FILE				Ryan	Hopefully apps2 triggered pedestal run
+2162	UH	NO ROOT FILE				Ryn	GPS (10Hz) + RF triggered run. New pedestals (taken with PPS trigger)
+2163	UH	2008-05-09 11:36:46	2008-05-09 11:43:07	113601	115278	Ryan	GPS (1Hz) + RF triggered run. New pedestals (taken with PPS trigger)
+2164	UH	2008-05-09 13:33:54	2008-05-09 13:35:53	115301	115420	Ryan	G12 (1Hz) .. Pedestal Rate Study
+2165	UH	2008-05-09 13:36:42	2008-05-09 13:39:23	115501	117112	Ryan	G12 (10Hz) .. Pedestal Rate Study
+2166	UH	2008-05-09 13:44:30	2008-05-09 13:45:33	117201	119187	Ryan	RF Trigger .. Pedestal Rate Study
+2167	UH	NO ROOT FILE				Ryan	Just for fun a threshold scan
+2168	UH	NO ROOT FILE				Ryan	Threshold Scan
+2169	UH	NO ROOT FILE				Ryan	RF Triggered Run. Probably
+2170	UH	NO ROOT FILE				Ryan	Long threshold scan
+2171	UH	NO ROOT FILE				Ryan	Long threshold scan (changed Acqd.config to use new official numbering schemes)
+2172	UH	NO ROOT FILE				Ryan	Long threshold scan (changed Acqd.config to use new official numbering schemes)
+2173	UH	NO ROOT FILE				Ryan	Long threshold scan (changed Acqd.config to use new official numbering schemes)
+2174	UH	NO ROOT FILE				Ryan	Pedestal Run (with luck)
+2175	UH	2008-05-21 09:30:43	2008-05-21 09:39:00	125001	129000	Ryan	Pedestal Run (with luck)
+2176	UH	NO ROOT FILE				Ryan	Long threshold scan
+2177	UH	2008-05-21 11:12:41	2008-05-21 11:12:54	129101	129590	Ryan	Might be a PPS2 + RF Triggered run with the RFCMs on
+2178	UH	NO ROOT FILE				Ryan	Long threshold scan -- RFCMs On?
+2179	UH	2008-05-21 11:24:53	2008-05-21 11:25:24	129601	129904	Ryan	PPS2 Triggered run with the RFCMs on
+2180	UH	2008-05-21 11:26:28	2008-05-21 11:34:45	130001	134000	Ryan	Pedestal run (RFCMs on)
+2181	UH	2008-05-21 11:50:18	2008-05-21 11:51:20	134101	134719	Ryan	Short PPS2 triggered run with RFCMs off?
+2182	UH	2008-05-21 11:58:51	2008-05-21 11:59:34	134801	135231	Ryan	Short PPS2 triggered run with RFCMs off? -- New Pedestals
+2183	UH	2008-05-21 12:00:14	2008-05-21 12:00:56	135301	135715	Ryan	Short PPS2 triggered run with RFCMs back on -- New Pedestals
+2184	UH	NO ROOT FILE				Ryan	Longer PPS2 triggered run with RFCMs back on -- New Pedestals
+2185	UH	NO ROOT FILE				Ryan	Threshold Scan with new 16 scalers per SURF data format
+2186	UH	NO ROOT FILE				Ryan	PPS Triggered run with global threshold set, still tetsing new SurfHk data format
+2187	UH	NO ROOT FILE				Ryan	RF Triggered run with the chan servo back on, pid goal 3000, who knows what will happen
+2188	UH	NO ROOT FILE				Ryan	Debugging Acqd
+2189	UH	NO ROOT FILE				Ryan	More Acqd Debugging
+2190	UH	NO ROOT FILE				Ryan	Threshold Scan with new 16 scalers per SURF data format -- Take 2
+2191	UH	2008-05-21 16:39:55	2008-05-21 16:40:20	140301	141301	Ryan	RF triggered run with chan servo enabled pid goal 3000
+2192	UH	NO ROOT FILE				Ryan	RF triggered run with chan servo enabled pid goal 1000
+2193	UH	NO ROOT FILE				Ryan	RF triggered run with global threshold 1000
+2194	UH	NO ROOT FILE				Ryan	RF triggered run with global threshold 2000
+2195	UH	NO ROOT FILE				Ryan	RF triggered run with global threshold 3000
+2196	UH	NO ROOT FILE				Ryan	RF triggered run with global threshold 3300
+2197	UH	NO ROOT FILE				Ryan	RF triggered run with global threshold 3200
+2198	UH	NO ROOT FILE				Ryan	RF triggered run with global threshold 3100
+2199	UH	NO ROOT FILE				Ryan	RF triggered run with global threshold 3050
+2200	UH	2008-05-21 17:07:56	2008-05-21 17:10:08	146201	146383	Ryan	RF triggered run with global threshold 3050 -- changed surfTrigBandMask implementation
+2201	UH	2008-05-21 17:11:54	2008-05-21 17:15:10	146401	146680	Ryan	RF triggered run with global threshold 3050 -- changed surfTrigBandMask implementation testing band mask
+2202	UH	2008-05-21 17:17:47	2008-05-21 17:19:25	146701	146710	Ryan	RF triggered run with global threshold 3050 -- changed surfTrigBandMask implementation testing band mask
+2203	UH	NO ROOT FILE				Ryan	Nonsense run at crazy trigger rate
+2204	UH	2008-05-21 17:30:30	2008-05-21 17:31:00	147801	148433	Ryan	Nonsense run at crazy trigger rate -- Testing surftrigBandMask
+2205	UH	NO ROOT FILE				Ryan	YATS (yet another threshold scan)
+2206	UH	NO ROOT FILE				Ryn	Pedestal Run
+2207	UH	NO ROOT FILE				Ryn	Might be an RF triggered run with the pid goal set to 200
+2208	UH	NO ROOT FILE				Ryan	Might be an RF triggered run with the pid goal set to 200
+2209	UH	NO ROOT FILE				Ryan	Might be an RF triggered run with the pid goal set to 1000
+2210	UH	NO ROOT FILE				Ryan	Might be an RF triggered run with the pid goal set to 1000
+2211	UH	NO ROOT FILE				Ryan	Might be an RF triggered run with the pid goal set to 1000 -- Testing bandmask
+2212	UH	NO ROOT FILE				Ryan	New slightly tidier version of Acqd
+2213	UH	NO ROOT FILE				Ryan	Testing select with Acqd
+2214	UH	NO ROOT FILE				Ryan	Very slow software triggered run
+2215	UH	NO ROOT FILE				Ryan	Very slow software triggered run
+2216	UH	NO ROOT FILE				Ryan	Trying out the silly new Acqd Start stuff
+2217	UH	NO ROOT FILE				Ryan	thresh scan
+2219	UH	NO ROOT FILE				Ryan	thresh scan
+2220	UH	NO ROOT FILE				Ryan	Testing
+2221	UH	NO ROOT FILE				Ryan	Testing with RFCMs off
+2222	UH	NO ROOT FILE				Ryan	Now with RFCMs on
+2223	UH	NO ROOT FILE				Ryan	RFCMs off again
+2224	UH	NO ROOT FILE				Ryan	Boo
+2225	UH	NO ROOT FILE				Ryan	Testing new startup nonsense
+2226	UH	NO ROOT FILE				Ryan	New data format for AnitaEventHeader_t ... only slightly different
+2227	UH	2008-05-22 19:07:26	2008-05-22 19:07:46	172501	172503	Ryan	And a RF triggered run to boot
+2229	UH	NO ROOT FILE				Ryan	Threshold Scan RFCMs On
+2230	UH	NO ROOT FILE				Patrick	Threshold scan with pulser input to RFCMs.
+2231	UH	NO ROOT FILE				Ryan	Threshold Scan with all RFCMs on?
+2232	UH	2008-05-25 10:03:56	2008-05-25 10:05:48	172501	172858	Ryan	RF Triggered run
+2233	UH	NO ROOT FILE				Ryan	RF Triggered run globalThreshold=3150
+2234	UH	NO ROOT FILE				Ryan	RF Triggered run globalThreshold=2750
+2235	UH	NO ROOT FILE				Ryan	RF Triggered run globalThreshold=2850
+2236	UH	NO ROOT FILE				Ryan	RF Triggered run globalThreshold=2850
+2237	UH	NO ROOT FILE				Ryan	RF Triggered run, fixed thresholds with 2MHz per band
+2238	UH	NO ROOT FILE				Ryan	RF Triggered run, fixed thresholds with 500kHz per band
+2239	UH	NO ROOT FILE				Ryan	RF Triggered run, fixed thresholds with 100kHz per band
+2240	UH	2008-05-25 10:30:06	2008-05-25 10:30:36	176001	177230	Ryan	RF Triggered run, fixed thresholds with 100kHz per band SURFs 1 & 2 masked
+2241	UH	NO ROOT FILE				Ryan	RF Triggered run, fixed thresholds with 100kHz all cliffs masked
+2242	UH	2008-05-25 10:36:52	2008-05-25 10:37:36	177301	179072	Ryan	RF Triggered run, fixed thresholds with 2MHz all cliffs masked
+2243	UH	2008-05-25 10:39:28	2008-05-25 10:40:22	179101	181231	Ryan	RF Triggered run, fixed thresholds with 1MHz all cliffs masked
+2244	UH	2008-05-25 10:57:11	2008-05-25 11:08:25	181301	183621	Ryan	Back to fixed threshold 3050
+2245	UH	NO ROOT FILE				Ryan	Back to fixed threshold 3100
+2246	UH	NO ROOT FILE				Ryan	RF Triggered, globalThreshold 3100, only SURF 4 enabled
+2247	UH	NO ROOT FILE				Ryan	RF Triggered, globalThreshold 3200, only SURF 4 enabled
+2248	UH	2008-05-25 11:34:41	2008-05-25 11:36:29	188801	189930	Ryan	RF Triggered, globalThreshold 3150, only SURF 4 enabled
+2249	UH	2008-05-25 12:02:09	2008-05-25 12:02:26	190001	190711	Ryan	RF Triggered, fixed thresholds tuned to 2MHz, only SURF 4 enabled
+2250	UH	2008-05-25 12:04:24	2008-05-25 12:05:09	190801	192009	Ryan	RF Triggered, fixed thresholds tuned to 1MHz, only SURF 4 enabled
+2251	UH	2008-05-26 08:44:38	2008-05-26 08:47:00	192101	196091	Ryan	RF Triggered, pid goal to 1MHz
+2252	UH	2008-05-26 08:50:38	2008-05-26 08:50:55	196101	196610	Ryan	RF Triggered, pid goal to 1MHz
+2253	UH	2008-05-26 08:54:55	2008-05-26 08:57:09	196701	196966	Ryan	RF Triggered, fixed threshold 500kHz
+2254	UH	2008-05-26 08:58:14	2008-05-26 08:59:36	197001	197630	Ryan	RF Triggered, fixed threshold 700kHz
+2255	UH	2008-05-26 09:09:59	2008-05-26 09:10:02	197701	197727	Ryan	RF Triggered, fixed threshold 700kHz
+2256	UH	2008-05-26 09:13:09	2008-05-26 09:13:11	197701	197706	Ryan	RF Triggered, fixed threshold 700kHz
+2257	UH	2008-05-26 09:14:23	2008-05-26 09:14:57	197701	197971	Ryan	RF Triggered, fixed threshold 700kHz
+2258	UH	2008-05-27 09:31:19	2008-05-27 09:33:11	198001	198769	Ryan	RF Triggered, fixed threshold 700kHz
+2259	UH	2008-05-27 09:35:52	2008-05-27 09:38:28	198801	201700	Ryan	RF Triggered, fixed threshold 900kHz
+2260	UH	2008-05-27 18:43:47	2008-05-27 19:42:24	201801	204501	Ryan	TURFIO test run 
+2261	UH	2008-05-27 19:42:46	2008-05-27 19:44:14	204501	206156	Ryan	More Acqd debugging
+2262	UH	2008-05-27 20:00:39	2008-05-27 20:01:19	206201	207021	Ryan	More Acqd debugging
+2264	UH	NO ROOT FILE				Patrick	Test with new TURF firmware (L3 inputs are L2s properly)
+2265	UH	NO ROOT FILE				Patrick	try 2 with new TURF
+2266	UH	NO ROOT FILE				Patrick	try #3 with lower thresholds
+2267	UH	NO ROOT FILE				Pat	try #5, with middling thresholds
+2268	UH	NO ROOT FILE				Pat	try #5, or whatever it is, with new TURF firmware
+2269	UH	NO ROOT FILE				Pat	test #6, or something
+2270	UH	NO ROOT FILE				Pat	test #7 or something
+2271	UH	NO ROOT FILE				Ryan	RF Triggered run, possibly. I'm not really sure as I didn't look at the config file.
+2272	UH	NO ROOT FILE				Ryan	PID Goal set for 1000
+2273	UH	NO ROOT FILE				Ryan	PID Goal set for 1r5000
+2274	UH	NO ROOT FILE				Ryan	Thresholds tuned to 1.8MHz
+2275	UH	NO ROOT FILE				Ryan	Thresholds tuned to 1.7MHz
+2276	UH	2008-05-28 13:40:33	2008-05-28 13:40:43	214201	214542	Ryan	Thresholds tuned to 1MHz
+2277	UH	2008-05-28 13:42:02	2008-05-28 13:42:07	214601	214765	Ryan	Thresholds tuned to 1MHz -- Turned off SURFs 9,10
+2278	UH	NO ROOT FILE				Ryan	Thresholds tuned to 1MHz -- Turned off SURFs 1,2,3,9,10
+2279	UH	NO ROOT FILE				Ryan	Thresholds tuned to 2MHz -- Turned off SURFs 1,2,3,9,10
+2280	UH	2008-05-28 13:46:55	2008-05-28 13:46:55	214801	214801	Ryan	Thresholds tuned to 3MHz -- Turned off SURFs 1,2,3,9,10
+2281	UH	2008-05-28 13:48:38	2008-05-28 13:49:44	214801	217063	Ryan	Thresholds tuned to 6MHz -- Turned off SURFs 1,2,3,9,10
+2282	UH	2008-05-28 13:50:30	2008-05-28 13:54:17	217101	218899	Ryan	Thresholds tuned to 5MHz -- Turned off SURFs 1,2,3,9,10
+2283	UH	2008-05-28 14:28:37	2008-05-28 14:28:56	218901	219674	Ryan	Thresholds tuned to 5MHz -- Turned off SURFs 1,2,,9,10
+2284	UH	2008-05-28 14:31:51	2008-05-28 14:31:55	219701	219875	Ryan	Thresholds tuned to 5MHz -- Turned off SURFs 1,3,9,10
+2285	UH	2008-05-28 19:17:49	2008-05-28 19:18:20	219901	220140	Ryan	Test Run
+2286	UH	2008-05-28 19:34:10	2008-05-28 19:34:19	220201	220283	Ryan	Test Run
+2287	UH	2008-05-28 19:35:03	2008-05-28 19:40:19	220201	222599	Ryan	Long run in background. Or at least that's the idea.
+2288	UH	NO ROOT FILE				Ryan	Long run in background. Or at least that's the idea. Reomved Acqd number of events limit
+2289	UH	2008-05-29 14:02:41	2008-05-29 14:05:36	683401	684762	Ryan	Testing the new TURF Rate thingy
+2291	UH	2008-05-29 14:16:39	2008-05-29 14:18:07	689001	689645	Ryan	More Turf Rate pps debugging
+2295	UH	2008-05-29 17:20:53	2008-05-29 17:23:22	768201	769289	Ryan	Trying a pidGoal of 5000. Still with bands amsked off that were masked off before.
+2297	UH	2008-05-29 17:42:32	2008-05-29 17:48:34	776901	779588	Ryan	Trying a pidGoal of 5000. Still with bands amsked off that were masked off before. -- New TurfRate with antTrigMask and nadirAntTrigMask
+2310	UH	NO ROOT FILE				Ryan	More Acqd rate debugging things
+2329	UH	2008-06-02 22:16:57	2008-06-02 22:18:22	1150401	1150599	Ryan	No idea, probably shouldn't have changed this
+2330	UH	2008-06-03 08:39:21	2008-06-03 08:39:46	1150601	1151591	Ryan	Testing the writing of the raw scaler block
+2331	UH	2008-06-03 09:04:27	2008-06-03 09:04:52	1151601	1152591	Ryan	Testing the writing of the raw scaler block
+2332	UH	NO ROOT FILE				Ryan	slightly longer run
+2333	UH	NO ROOT FILE				Ryan	More efficiency studies, the channel rates are tuned to 7000,5000,5000,1000 for low,mid,high and full respectively
+2334	UH	NO ROOT FILE				Ryan	More efficiency studies, the channel rates are tuned to 10000,5000,5000,1000 for low,mid,high and full respectively
+2335	UH	NO ROOT FILE				Ryan	More efficiency studies, the channel rates are tuned to 12000,5000,5000,1000 for low,mid,high and full respectively
+2336	UH	NO ROOT FILE				Ryan	More efficiency studies, the channel rates are tuned to 15000,5000,5000,1000 for low,mid,high and full respectively
+2337	UH	NO ROOT FILE				Ryan	More efficiency studies, the channel rates are tuned to 10000,10000,5000,1000 for low,mid,high and full respectively
+2338	UH	NO ROOT FILE				Ryan	More efficiency studies, the channel rates are tuned to 5000,5000,5000,5000 for low,mid,high and full respectively
+2339	UH	NO ROOT FILE				Ryan	More efficiency studies, the channel rates are tuned to 5000,5000,5000,1000 for low,mid,high and full respectively
+2340	UH	NO ROOT FILE				Ryan	More efficiency studies, the channel rates are tuned to 5000,5000,5000,5000 for low,mid,high and full respectively
+2341	UH	NO ROOT FILE				Ryan	More efficiency studies, the channel rates are tuned to 5000,5000,5000,100 for low,mid,high and full respectively
+2342	UH	NO ROOT FILE				Ryan	Setting fourth threshold on surf four to zero
+2343	UH	NO ROOT FILE				Ryan	Setting fourth threshold on surf four to zero
+2345	UH	NO ROOT FILE				Ryan	Setting all thresholds on surf four to zero
+2346	UH	NO ROOT FILE				Ryan	Only threshold[0] is non zero
+2347	UH	NO ROOT FILE				Ryan	Only threshold[1] is non zero
+2348	UH	NO ROOT FILE				Ryan	Only threshold[4] is non zero
+2349	UH	NO ROOT FILE				Ryan	Only threshold[0,1,4,5] are non zero
+2350	UH	NO ROOT FILE				Ryan	Threshold Scan with Fixed scaler mapping
+2351	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,1000 for low,mid,high and full respectively
+2352	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,100 for low,mid,high and full respectively
+2353	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,200 for low,mid,high and full respectively
+2354	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,400 for low,mid,high and full respectively
+2355	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,600 for low,mid,high and full respectively
+2356	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,800 for low,mid,high and full respectively
+2357	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,900 for low,mid,high and full respectively
+2358	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,1000 for low,mid,high and full respectively
+2359	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,1200 for low,mid,high and full respectively
+2360	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,1500 for low,mid,high and full respectively
+2361	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,2000 for low,mid,high and full respectively
+2362	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,3000 for low,mid,high and full respectively
+2363	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,1000 for low,mid,high and full respectively
+2364	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,500 for low,mid,high and full respectively
+2365	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,200 for low,mid,high and full respectively
+2366	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,5000,5000,100 for low,mid,high and full respectively
+2367	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 1000,5000,5000,1000 for low,mid,high and full respectively
+2368	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 3000,5000,5000,1000 for low,mid,high and full respectively
+2369	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 7000,5000,5000,1000 for low,mid,high and full respectively
+2370	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 9000,5000,5000,1000 for low,mid,high and full respectively
+2371	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 11000,5000,5000,1000 for low,mid,high and full respectively
+2372	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,7000,5000,1000 for low,mid,high and full respectively
+2373	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,11000,5000,1000 for low,mid,high and full respectively
+2374	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 5000,11000,5000,1000 for low,mid,high and full respectively  (last run was 9000)
+2375	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 13000,13000,5000,1000 for low,mid,high and full respectively  (last run was 9000)
+2376	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 13000,13000,5000,1000 for low,mid,high and full respectively  (last run was 9000)
+2377	UH	NO ROOT FILE				Ryan	FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 15000,15000,5000,500 for low,mid,high and full respectively  (last run was 9000)
+2378	UH	NO ROOT FILE				FIXED ACQD SCALER MAPPING. More efficiency studies, the channel rates are tuned to 10000,10000,5000,500 for low,mid,high and full respectively  (last run was 9000)	Ryan
+2379	UH	NO ROOT FILE				Pat	Efficiency test run to set the DAC thresholds
+2380	UH	NO ROOT FILE				Pat	Efficiency test run to set the DAC thresholds, 2
+2381	UH	NO ROOT FILE				Pat	Efficiency test run to set the DAC thresholds, 3
+2382	UH	NO ROOT FILE				Pat	Efficiency test run to set the DAC thresholds, 4, 10, 10, 5, 0.5
+2383	UH	NO ROOT FILE				Pat	Baseline run
+2384	UH	NO ROOT FILE				Pat	Baseline run, 3
+2385	UH	NO ROOT FILE				Pat	Baseline run, 4
+2386	UH	NO ROOT FILE				Pat	Test run again...
+2387	UH	NO ROOT FILE				Pat	reset thresholds to 5 MHz
+2388	UH	NO ROOT FILE				Ryan	Running headlong into PID testing
+2389	UH	NO ROOT FILE				Ryan	Running headlong into PID testing
+2390	UH	NO ROOT FILE				Ryan	Running headlong into PID testing
+2391	UH	NO ROOT FILE				Ryan	Running headlong into PID testing
+2392	UH	NO ROOT FILE				Ryan	Start of an efficiency scan with the three sub bands at 10000 and the full band at 500.
+2393	UH	NO ROOT FILE				Ryan	Threshold scan, to see if they've really halved the scaler integration time
+2394	UH	NO ROOT FILE				Ryan	Threshold scan, what have they done to SURF four? -- Fixed surftrigBandMask issue.
+2395	UH	2008-06-04 12:41:36	2008-06-04 12:42:29	1268601	1270591	Ryan	Testing with new data format and wiritng out pedsubbed files
+2396	UH	NO ROOT FILE				Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned t 1MHZ	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned t 1MHZ
+2397	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned t 2MHZ
+2398	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 2MHZ
+2399	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 3MHZ
+2400	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 4MHZ
+2401	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 5MHZ
+2402	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 6MHZ
+2403	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 8MHZ
+2404	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 7MHZ
+2405	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 9MHZ
+2406	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 10MHZ
+2407	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 11MHZ
+2408	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 12MHZ
+2410	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 13MHZ
+2411	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 14MHZ
+2412	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 15MHZ
+2413	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 16MHZ
+2414	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 100kHz
+2415	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 300kHz
+2416	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 500kHz
+2417	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 700kHz
+2418	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 900kHz
+2419	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz sub at 1500kHz
+2420	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz, SURF 4 sub bands of ant A set to 3280
+2421	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz, SURF 4 sub bands of ant A set to 3290
+2422	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz, SURF 4 sub bands of ant A set to 3300
+2423	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz, SURF 4 sub bands of ant A set to 3310
+2424	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz, SURF 4 sub bands of ant A set to 3295
+2426	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz, SURF 4 sub bands of ant A set to 3320
+2427	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz, SURF 4 sub bands of ant A set to 3330
+2428	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz, SURF 4 sub bands of ant A set to 3340
+2429	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned, full at 1MHz, SURF 4 sub bands of ant A set to 3350
+2430	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned,, SURF 4 sub bands of ant A set to 3350, full band to 2715
+2431	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned,, SURF 4 sub bands of ant A set to 3350, full band to 2765
+2432	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned,, SURF 4 sub bands of ant A set to 3350, full band to 2665
+2433	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned,, SURF 4 sub bands of ant A set to 3350, full band to 2565
+2434	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned,, SURF 4 sub bands of ant A set to 3350, full band to 2465
+2435	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned,, SURF 4 sub bands of ant A set to 3350, full band to 2365
+2436	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned,, SURF 4 sub bands of ant A set to 3350, full band to 2265
+2437	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned,, SURF 4 sub bands of ant A set to 3350, full band to 2165
+2438	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned,, SURF 4 sub bands of ant A set to 3350, full band to 2065
+2439	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned,, SURF 4 sub bands of ant A set to 3350, full band to 1565
+2440	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned,, SURF 4 sub bands of ant A set to 3350, full band to 3000
+2441	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned,, SURF 4 sub bands of ant A set to 3350, full band to 3100
+2442	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned,, SURF 4 sub bands of ant A set to 3350, full band to 3200
+2443	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Efficiency scan with thresholds tuned,, SURF 4 sub bands of ant A set to 3350, full band to 3300
+2444	UH	NO ROOT FILE				Ryan	Note: SURF 4 has factor of two reoprting error in scalers. Testing dodgy scalers
+2451	UH	NO ROOT FILE				Ryan	Run with chan servo enabled and low,mid,high=1Mhz full=500kHz (maybe) 
+2452	UH	NO ROOT FILE				Ryan	Run with chan servo enabled and low,mid,high=2Mhz full=500kHz (maybe) 
+2453	UH	NO ROOT FILE				Ryan	Run with chan servo enabled and low,mid,high=3Mhz full=500kHz (maybe) 
+2454	UH	NO ROOT FILE				Ryan	Run with chan servo enabled and low,mid,high=4Mhz full=500kHz (maybe) 
+2455	UH	NO ROOT FILE				Ryan	Run with chan servo enabled and low,mid,high=5Mhz full=500kHz (maybe) 
+2457	UH	NO ROOT FILE				Ryan	Run with chan servo enabled and low,mid,high=6Mhz full=500kHz (maybe) 
+2458	UH	2008-06-05 15:55:13	2008-06-05 16:00:56	1380101	1382091	Ryan	Run with chan servo enabled and low,mid,high=7Mhz full=500kHz (maybe) 
+2459	UH	2008-06-05 16:53:14	2008-06-05 16:58:21	1382101	1384091	Run with chan servo enabled and low,mid,high=10Mhz full=500kHz (maybe) 	Ryan
+2460	UH	2008-06-05 17:00:01	2008-06-05 17:01:12	1384101	1384425	Ryan	Run with chan servo enabled and low,mid,high=10,1,5Mhz full=500kHz (maybe) 
+2461	UH	2008-06-05 17:05:03	2008-06-05 17:05:58	1384501	1384791	Ryan	No idea
+2462	UH	2008-06-05 17:06:54	2008-06-05 17:13:12	1384801	1386791	Ryan	No idea still
+2463	UH	2008-06-05 17:16:11	2008-06-05 17:19:01	1386801	1388791	Ryan	10,10,10,3??
+2464	UH	2008-06-05 17:27:39	2008-06-05 17:29:58	1388801	1389735	Ryan	Disabled chan servo, set thresholds to 5MHz and 1MHZ for sub and full
+2465	UH	2008-06-05 17:32:39	2008-06-05 17:32:55	1389801	1390397	Ryan	Crazy run with thresholds tuned to 10MHz and 5MHz
+2466	UH	2008-06-05 17:37:19	2008-06-05 17:38:12	1390401	1392391	Ryan	Crazy run with thresholds tuned to 10MHz and 5MHz
+2467	UH	NO ROOT FILE				Ryan	Threshold Scan
+2468	UH	2008-06-05 17:54:24	2008-06-05 17:55:16	1392401	1392729	Ryan	Thresholds tuned to 5MHz and 500KHz
+2469	UH	2008-06-05 17:56:26	2008-06-05 18:01:23	1392801	1394791	Ryan	Thresholds tuned to 5MHz and 1MHz
+2470	UH	2008-06-05 18:11:37	2008-06-05 18:14:19	1394801	1396043	Ryan	Thresholds tuned to 10,5,5,1 MHz 
+2471	UH	NO ROOT FILE				Ryan	Thresholds tuned to 10,5,2,1 MHz 
+2472	UH	NO ROOT FILE				Ryan	Back to testing chanServo
+2473	UH	2008-06-05 18:28:03	2008-06-05 18:28:34	1399801	1399991	Ryan	Servo to 15,5,5,0.5MHz
+2474	UH	2008-06-05 18:33:49	2008-06-05 18:34:18	1400001	1400191	Ryan	Servo to 12,5,5,0.5MHz
+2475	UH	2008-06-05 18:35:01	2008-06-05 18:35:29	1400201	1400391	Ryan	Servo to 10,5,5,0.5MHz
+2476	UH	2008-06-05 18:40:16	2008-06-05 18:40:44	1400401	1400591	Ryan	Servo to 8,5,5,0.5MHz
+2477	UH	2008-06-05 18:44:38	2008-06-05 18:45:08	1400601	1400791	Ryan	Servo to 5,5,5,0.5MHz
+2478	UH	2008-06-05 18:46:10	2008-06-05 18:46:41	1400801	1400991	Ryan	Servo to 5,5,5,0.2MHz
+2479	UH	2008-06-05 18:47:19	2008-06-05 18:47:50	1401001	1401191	Ryan	Servo to 5,5,5,0.1MHz
+2480	UH	2008-06-05 18:48:29	2008-06-05 18:48:57	1401201	1401391	Ryan	Servo to 5,5,5,0.05MHz
+2481	UH	2008-06-05 18:50:49	2008-06-05 18:51:16	1401401	1401591	Ryan	Servo to 5,5,5,1MHz
+2482	UH	2008-06-05 18:52:04	2008-06-05 18:52:29	1401601	1401791	Ryan	Servo to 5,5,5,2MHz
+2483	UH	2008-06-05 18:53:26	2008-06-05 18:53:45	1401801	1401991	Ryan	Servo to 5,5,5,3MHz
+2484	UH	2008-06-05 18:54:44	2008-06-05 18:55:02	1402001	1402191	Ryan	Servo to 5,5,5,4MHz
+2485	UH	2008-06-05 18:56:51	2008-06-05 18:57:07	1402201	1402391	Ryan	Servo to 5,5,5,5MHz
+2486	UH	2008-06-05 18:59:21	2008-06-05 18:59:34	1402401	1402591	Ryan	Servo to 5,5,5,8MHz
+2487	UH	2008-06-05 19:00:24	2008-06-05 19:00:52	1402601	1402791	Ryan	Servo to 5,2,5,5MHz
+2488	UH	2008-06-05 19:02:54	2008-06-05 19:03:11	1402801	1402991	Ryan	Servo to 5,5,5,5MHz
+2489	UH	2008-06-06 08:50:41	2008-06-06 08:51:19	1403001	1403391	Ryan	Servo to 5,5,5,5MHz
+2490	UH	2008-06-06 08:52:36	2008-06-06 08:52:54	1403401	1404096	Ryan	Longer version of the same run
+2491	UH	2008-06-06 08:53:29	2008-06-06 08:53:46	1404101	1404743	Ryan	Servo to 5,5,5,1MHz
+2492	UH	2008-06-06 08:54:27	2008-06-06 08:55:20	1404801	1406791	Ryan	Servo to 1,1,1,1MHz
+2493	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=2000
+2494	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=2100
+2495	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=2200
+2496	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=2300
+2497	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=2400
+2498	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=2500
+2499	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=2600
+2500	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=2700
+2501	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=2800
+2502	UH	2008-06-06 09:29:12	2008-06-06 09:30:20	1406801	1406820	Ryan	Lazy efficiency scan -- globalThreshold=2900
+2503	UH	2008-06-06 09:30:48	2008-06-06 09:32:02	1406801	1408112	Ryan	Lazy efficiency scan -- globalThreshold=3000
+2504	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=3100
+2505	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=3200
+2506	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=3300
+2507	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=3400
+2508	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=3500
+2509	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=3600
+2510	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=3210
+2511	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=3220
+2512	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=3230
+2513	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=3240
+2514	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=3250
+2515	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=3260
+2516	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=3270
+2517	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=3280
+2518	UH	NO ROOT FILE				Ryan	Lazy efficiency scan -- globalThreshold=3290
+2519	UH	NO ROOT FILE				Servo on at 12,3,8,0.8MHz	Ryan
+2520	UH	NO ROOT FILE				Ryan	Threshold Scan
+2521	UH	NO ROOT FILE				Ryan	Servo on at 15,3,8,0.8MHz
+2522	UH	NO ROOT FILE				Ryan	Servo on at 9,3,8,0.8MHz
+2523	UH	NO ROOT FILE				Ryan	Servo on at 6,3,8,0.8MHz
+2524	UH	NO ROOT FILE				Ryan	Servo on at 3,3,8,0.8MHz
+2525	UH	NO ROOT FILE				Ryan	Servo on at 12,2,8,0.8MHz
+2526	UH	NO ROOT FILE				Ryan	Servo on at 12,2,8,0.8MHz
+2527	UH	NO ROOT FILE				Ryan	Servo on at 6,2,4,0.5MHz
+2528	UH	NO ROOT FILE				Ryan	Servo on at 6,6,4,0.5MHz
+2529	UH	NO ROOT FILE				Ryan	Servo on at 6,9,4,0.5MHz
+2530	UH	NO ROOT FILE				Ryan	Servo on at 6,12,4,0.5MHz
+2531	UH	NO ROOT FILE				Ryan	Servo on at 6,1,4,0.5MHz
+2532	UH	NO ROOT FILE				Ryan	Servo on at 6,0.5,4,0.5MHz
+2533	UH	NO ROOT FILE				Ryan	Servo on at 6,0.1,4,0.5MHz
+2534	UH	NO ROOT FILE				Ryan	Servo on at 6,2,2,0.5MHz
+2535	UH	NO ROOT FILE				Ryan	Servo on at 6,2,1,0.5MHz
+2536	UH	NO ROOT FILE				Ryan	Servo on at 12,2,3,0.5MHz
+2537	UH	NO ROOT FILE				Ryan	Servo on at 14,2,5,0.5MHz
+2538	UH	NO ROOT FILE				Ryan	Servo on at 12,2,3.5,0.5MHz
+2539	UH	NO ROOT FILE				Ryan	Servo on at 12,2,3.5,0.1MHz
+2543	UH	NO ROOT FILE				Ryan	Test run with PPS2 and soft trig (1/20Hz)
+2549	UH	NO ROOT FILE				Ryan	Testing avg surf hk packets
+2550	UH	NO ROOT FILE				Ryan	Testing summed turf rate packets
+2551	UH	NO ROOT FILE				Ryan	Testing summed turf rate packets
+2553	UH	NO ROOT FILE				Ryan	Threshold Scan
+2554	UH	NO ROOT FILE				Ryan	Threshold Scan
+2556	UH	2008-06-18 20:01:21	2008-06-18 20:02:40	1478801	1480791	Ryan	Testing sumTurf ouput
+2557	Pal.	2008-06-18 20:28:20	2008-06-18 20:29:34	1480801	1482699	Ryan	Did Patrick fix the scaler oveflow on SURF 4? Take 2
+2558	Pal.	2008-06-18 20:57:51	2008-06-18 20:59:02	1482801	1484699	Ryan	Testing avg surf thingy
+2559	Pal.	NO ROOT FILE				Ryan	Testing avg surf thingy
+2568	Pal.	NO ROOT FILE				Ryan	Threshold Scan -- I reckon SURF 4 still all messed up
+2569	Pal.	NO ROOT FILE				Ryan	Threshold Scan -- I reckon SURF 4 still all messed up
+2571	Pal.	NO ROOT FILE				Ryan	Threshold Scan -- maybe Patrick's new firmware fixed it
+2572	Pal.	NO ROOT FILE				Ryan	Unclear cpmfiguration of the pulser etc.
+2573	Pal.	NO ROOT FILE				Ryan	Unclear cpmfiguration of the pulser etc.
+2574	Pal.	NO ROOT FILE				Ryan	Pulser banging away at 500Hz on SURF 4, offset is some value;
+2575	Pal.	NO ROOT FILE				Ryan	Pulser banging away at 500Hz on SURF 4, offset is some value;
+2576	Pal.	NO ROOT FILE				Ryan	Pulser off, threshold scan to find reasonable threshold vals
+2577	Pal.	NO ROOT FILE				Ryan	Soft Trig Run RFCMs off
+2578	Pal.	NO ROOT FILE				Ryan	Soft Trig Run RFCMs off
+2579	Pal.	NO ROOT FILE				Ryan	Soft Trig Run RFCMs On -- Ant 4 Disconnect 12,23,24 connected
+2582	Pal.	NO ROOT FILE				Ryan	Soft Trig Run RFCMs On -- Ant 12 Disconnect 4,23,24 connected -- test
+2583	Pal.	NO ROOT FILE				Ryan	Soft Trig Run RFCMs On -- New RFCM
+2584	Pal.	NO ROOT FILE				Ryan	Soft Trig Run RFCMs On -- New RFCM Connected
+2586	Pal.	NO ROOT FILE				Ryan	Threshold Scan
+2587	Pal.	NO ROOT FILE				Ryan	Threshold Scan
+2588	Pal.	NO ROOT FILE				Ryan	Event Scan
+2589	Pal.	NO ROOT FILE				Ryan	Threshold Scan, pulser delay at 60.8ns, thresholds tuned to 10MHz, 5MHz, 5MHz, 1MHz
+2590	Pal.	NO ROOT FILE				Ryan	Threshold Scan, pulser delay at 60.8ns, thresholds tuned to 10MHz, 5MHz, 5MHz, 0.5MHz
+2591	Pal.	NO ROOT FILE				Ryan	Short run to test RFCM/config
+2592	Pal.	NO ROOT FILE				Ryan	Short run to test RFCM/config -- 10, 5, 5, 1
+2595	Pal.	NO ROOT FILE				Ryan	Short run to test RFCM/config -- 10, 5, 5, 1
+2597	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1
+2598	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 55ns
+2599	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 60ns
+2600	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 65ns
+2601	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 70ns
+2602	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 75ns
+2603	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 80ns
+2604	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 85ns
+2605	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 90ns
+2606	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 95ns
+2607	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 100ns
+2608	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 45ns
+2609	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns
+2610	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 35ns
+2611	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 30ns
+2612	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 25ns
+2613	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 20ns
+2614	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 15ns
+2615	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 10ns
+2616	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 39ns
+2617	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 38ns
+2618	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 37ns
+2619	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 36ns
+2620	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 34ns
+2621	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 33ns
+2622	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 32ns
+2623	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 31ns
+2624	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 41ns
+2625	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 42ns
+2626	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 43ns
+2627	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 44ns
+2628	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 46ns
+2629	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 47ns
+2630	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 48ns
+2631	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 49ns
+2632	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 51ns
+2633	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 52ns
+2634	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 53ns
+2635	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 54ns
+2636	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 55ns
+2637	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 30dB
+2638	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 31dB
+2639	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 32dB
+2640	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 33dB
+2641	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 34dB
+2642	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 35dB
+2643	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 36dB
+2644	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 37dB
+2645	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 38dB
+2646	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 39dB
+2647	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 29dB
+2648	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 28dB
+2649	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 27dB
+2650	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 26dB
+2651	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 25dB
+2652	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 24dB
+2653	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 23dB
+2654	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 22dB
+2655	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 40dB
+2656	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 41dB
+2657	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 42dB
+2658	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- 10, 5, 5, 1 -- Delay 40ns -- Atten 43dB
+2661	Pal.	NO ROOT FILE				Ryan	Test with extra scalers
+2662	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 43dB
+2663	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 42dB
+2664	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 41dB
+2665	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 40dB
+2666	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 39dB
+2667	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 38dB
+2668	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 37dB
+2669	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 36dB
+2670	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 35dB
+2671	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 34dB
+2672	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 33dB
+2673	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 32dB
+2674	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 31dB
+2675	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 31dB
+2676	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 30dB
+2677	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 29dB
+2678	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 28dB
+2679	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 27dB
+2680	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 26dB
+2681	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 25dB
+2682	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 24dB
+2683	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 23dB
+2684	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 22dB
+2689	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 22dB
+2690	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 23dB
+2691	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 24dB
+2692	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 25dB
+2693	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 26dB
+2694	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 27dB
+2695	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 28dB
+2696	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 29dB
+2697	Pal.	NO ROOT FILE				Ryan	Eff Scan SURF 4 -- Atten 30dB
+2703	Pal.	2008-06-21 14:22:01	2008-06-21 14:22:41	3577301	3578737	Ryan	Test run to set thresholds
+2704	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 96 ns
+2705	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 96 ns
+2706	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 116 ns
+2707	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 121 ns
+2708	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 126 ns
+2709	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 131 ns
+2710	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 131 ns
+2711	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 136 ns
+2712	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 141 ns
+2713	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 146 ns
+2714	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 151 ns
+2715	Pal.	NO ROOT FILE				Ryan	Setting Thresholds
+2716	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 151 ns
+2717	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 161 ns
+2718	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 171 ns
+2719	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 141 ns
+2720	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 131 ns
+2721	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 121 ns
+2722	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 111 ns
+2723	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 101 ns
+2724	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 91 ns
+2725	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 81 ns
+2726	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 81 ns
+2727	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 61 ns
+2728	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 136 ns
+2729	Pal.	NO ROOT FILE				Delay Scan -- Ref @ 136 ns	Delay Scan -- Ref @ 126 ns
+2730	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 125 ns
+2731	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 124 ns
+2732	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 123 ns
+2733	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 122 ns
+2734	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 120 ns
+2735	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 120 ns
+2736	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 118 ns
+2737	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 117 ns
+2738	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 116 ns
+2739	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 115 ns
+2740	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 114 ns
+2741	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 113 ns
+2742	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 112 ns
+2743	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 110 ns
+2744	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 110 ns
+2745	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 106 ns
+2746	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 103 ns
+2747	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 102 ns
+2748	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 100 ns
+2749	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 99 ns
+2750	Pal.	NO ROOT FILE				Ryan	Delay Scan -- Ref @ 98 ns
+2751	Pal.	2008-06-21 17:13:41	2008-06-21 17:14:05	3647301	3648165	Ryan	Delay Scan -- Ref @ 97 ns
+2752	Pal.	NO ROOT FILE				Ryan	Atten Scan -- SURF 4 - 25dB
+2753	Pal.	NO ROOT FILE				Ryan	Atten Scan -- SURF 4 - 22dB
+2754	Pal.	NO ROOT FILE				Ryan	Atten Scan -- SURF 4 - 28dB
+2755	Pal.	NO ROOT FILE				Ryan	Atten Scan -- SURF 4 - 31dB
+2756	Pal.	NO ROOT FILE				Ryan	Atten Scan -- SURF 4 - 34dB
+2757	Pal.	NO ROOT FILE				Ryan	Atten Scan -- SURF 4 - 37dB
+2758	Pal.	NO ROOT FILE				Ryan	Atten Scan -- SURF 4 - 40dB
+2759	Pal.	NO ROOT FILE				Ryan	Atten Scan -- SURF 4 - 50dB
+2760	Pal.	2008-06-21 18:54:21	2008-06-21 18:54:53	3654801	3654874	Ryan	Atten Scan -- SURF 3 - 25dB
+2761	Pal.	NO ROOT FILE				Ryan	Testing SURF 3
+2762	Pal.	2008-06-21 19:05:22	2008-06-21 19:05:56	3654801	3654871	Ryan	Testing SURF 3
+2763	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 3 - 25dB  -- 3V Missing
+2764	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 3 - 22dB  -- 3V Missing
+2765	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 3 - 28dB  -- 3V Missing
+2766	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 3 - 25dB  -- 3V Missing
+2767	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 3 - 22dB  -- 3V Missing
+2768	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 3 - 28dB  -- 3V Missing
+2769	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 3 - 31dB  -- 3V Missing
+2770	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 3 - 34dB  -- 3V Missing
+2771	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 3 - 37dB  -- 3V Missing
+2772	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 3 - 40dB  -- 3V Missing
+2773	Pal.	2008-06-21 19:32:44	2008-06-21 19:33:14	3655001	3655036	Matt	Atten Scan -- SURF 3 - 50dB  -- 3V Missing
+2774	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 3 - 25dB  - 109ns delay -- 3V Missing
+2775	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 3 - 25dB  - 99ns delay -- 3V Missing
+2776	Pal.	2008-06-21 19:41:17	2008-06-21 19:41:35	3655001	3655643	Matt	Atten Scan -- SURF 3 - 25dB  
+2777	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 2 - 25dB  
+2778	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 2 - 22dB  
+2779	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 2 - 28dB  
+2780	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 2 - 31dB  
+2781	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 2 - 34dB  
+2782	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 2 - 37dB  
+2783	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 2 - 40dB  
+2784	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 2 - 50dB  
+2785	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 2 - 25dB - 109ns delay
+2786	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 2 - 25dB - 99ns delay
+2787	Pal.	2008-06-21 20:24:58	2008-06-21 20:25:17	3662401	3663106	Matt	Atten Scan -- SURF 1 - 25dB
+2788	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 1 - 25dB
+2789	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 1 - 22dB
+2790	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 1 - 28dB
+2791	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 1 - 31dB
+2792	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 1 - 34dB
+2793	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 1 - 37dB
+2794	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 1 - 40dB
+2795	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 1 - 50dB
+2796	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 1 - 25dB - 109ns delay
+2797	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 1 - 25dB - 109ns delay
+2798	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 1 - 25dB - 99ns delay
+2799	Pal.	2008-06-21 20:59:25	2008-06-21 20:59:43	3669901	3669926	Matt	Atten Scan -- SURF 5 - 25dB 
+2800	Pal.	2008-06-21 21:04:06	2008-06-21 21:04:19	3669901	3670397	Matt	Atten Scan -- SURF 5 - 25dB 
+2802	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 5 - 25dB 
+2803	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 5 - 22dB 
+2804	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 5 - 28dB 
+2805	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 5 - 31dB 
+2806	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 5 - 34dB 
+2807	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 5 - 37dB 
+2808	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 5 - 40dB 
+2809	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 5 - 40dB 
+2810	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 5 - 50dB 
+2811	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 5 - 25dB - 109ns delay
+2812	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 5 - 25dB - 99ns delay
+2813	Pal.	2008-06-21 21:31:29	2008-06-21 21:31:41	3678401	3678851	Matt	Atten Scan -- SURF 6 - 25dB - 99ns delay
+2814	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 6 - 25dB
+2815	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 6 - 22dB
+2816	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 6 - 28dB
+2817	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 6 - 31dB
+2818	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 6 - 34dB
+2819	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 6 - 37dB
+2820	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 6 - 40dB
+2822	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 6 - 50dB
+2823	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 6 - 25dB - 109ns delay
+2824	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 6 - 25dB - 99ns delay
+2825	Pal.	2008-06-21 22:03:06	2008-06-21 22:03:20	3685401	3685930	Matt	Atten Scan -- SURF 7 - 25dB
+2826	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 7 - 25dB
+2827	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 7 - 22dB
+2828	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 7 - 28dB
+2829	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 7 - 31dB
+2830	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 7 - 34dB
+2831	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 7 - 37dB
+2832	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 7 - 40dB
+2833	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 7 - 50dB
+2834	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 7 - 25dB - 109ns delay
+2835	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 7 - 25dB - 99ns delay
+2836	Pal.	2008-06-21 22:32:24	2008-06-21 22:32:33	3693101	3693472	Matt	Atten Scan -- SURF 7 - 25dB
+2837	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 8 - 25dB
+2838	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 8 - 22dB
+2839	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 8 - 28dB
+2840	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 8 - 31dB
+2842	Pal.	NO ROOT FILE					
+2843	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 8 - 25dB
+2844	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 8 - 22dB
+2845	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 8 - 28dB
+2846	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 8 - 31dB
+2847	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 8 - 34dB
+2848	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 8 - 37dB
+2849	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 8 - 40dB
+2850	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 8 - 50dB
+2851	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 8 - 25dB - 109ns delay
+2852	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 8 - 25dB - 99ns delay
+2853	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 9 - 25dB
+2854	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 9 - 25dB
+2856	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 9 - 25dB
+2857	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 9 - 25dB
+2859	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 9 - 25dB
+2860	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 9 - 22dB
+2861	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 9 - 28dB
+2862	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 9 - 31dB
+2863	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 9 - 34dB
+2864	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 9 - 37dB
+2865	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 9 - 40dB
+2866	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 9 - 50dB
+2867	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 9 - 25dB - 109ns delay
+2868	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 9 - 25dB - 99ns delay
+2869	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 10 - 25dB
+2870	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 10 - 25dB
+2871	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 10 - 22dB
+2872	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 10 - 28dB
+2873	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 10 - 31dB
+2874	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 10 - 34dB
+2875	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 10 - 37dB
+2876	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 10 - 40dB
+2877	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 10 - 50dB
+2878	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 10 - 25dB - 109ns delay
+2879	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 10 - 25dB - 99ns delay
+2880	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 10 - 25dB --
+2881	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 10 - 25dB --
+2882	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 10 - 25dB --
+2883	Pal.	NO ROOT FILE				Matt	Atten Scan -- SURF 10 - 25dB --
+2884	Pal.	NO ROOT FILE				Matt	Waveform Data -- SURF 10
+2885	Pal.	NO ROOT FILE				Matt	Waveform Data -- SURF 10
+2886	Pal.	NO ROOT FILE				Matt	Waveform Data -- Ant 33 35 37 39
+2887	Pal.	NO ROOT FILE				Ryan	Testing new TURF frimware version, should have a PPS1 trigger who knows what else
+2888	Pal.	NO ROOT FILE				Ryan	Testing new TURF/TURFIO and hopefully not crashing everything
+2889	Pal.	2008-06-30 20:16:52	2008-06-30 20:20:59	3713701	3713941	Ryan	Test run to acquire some statistics on ppsNum/trigNum slippage
+2890	Pal.	NO ROOT FILE				Ryan	Patrick says it works
+2892	Pal.	2008-06-30 22:42:10	2008-06-30 22:59:11	3714201	3715200	Ryan	Patrick says it works
+2893	Pal.	NO ROOT FILE				Ryan	Changed holdoff on PPS
+2894	Pal.	NO ROOT FILE				Ryan	Changed constrints
+2895	Pal.	NO ROOT FILE				Ryan	Software triggered run at 1Hz???
+2896	Pal.	NO ROOT FILE				Patrick	It's okay, there's no chance in hell this will work
+2897	Pal.	NO ROOT FILE				Ryan	Testing new intermediate version of SURF firmware
+2898	Pal.	NO ROOT FILE				Ryan	Who knows what state things are in
+2899	Pal.	NO ROOT FILE				Ryan	New test last week(ish) firmware
+2900	Pal.	2008-07-01 16:08:26	2008-07-01 16:09:08	3717201	3717243	Ryan 	Test run with some SURFs programmed the old fashioned way
+2901	Pal.	2008-07-01 16:24:01	2008-07-01 16:24:38	3717201	3717238	Ryan	Test run with some fully programmed set of old SURFs
+2902	Pal.	2008-07-01 16:25:11	2008-07-01 16:26:32	3717201	3717478	Ryan	Test run with RF triggers turned on
+2903	Pal.	2008-07-01 16:27:22	2008-07-01 16:28:41	3717501	3718046	Ryan	Test run with RF + soft + pps triggers turned on
+2904	Pal.	2008-07-01 19:17:10	2008-07-02 17:52:03	3718101	3721743	Ryan	New run fun
+2905	Pal.	2008-07-02 17:55:11	2008-07-02 17:55:52	3721801	3722179	Ryan	New run fun -- with LOS
+2906	Pal.	2008-07-02 18:03:41	2008-07-02 18:07:09	3722201	3723918	Ryan	Test run with fun
+2907	Pal.	2008-07-02 18:26:31	2008-07-02 18:28:02	3724001	3724704	Ryan	Test run with fun
+2908	Pal.	2008-07-02 18:36:59	2008-07-02 18:59:55	3724801	3735384	Ryan	A fun filled run
+2909	Pal.	2008-07-02 22:55:20	2008-07-03 00:48:50	3735401	3752217	Ryan	Test run in whatever config we are in
+2910	Pal.	2008-07-03 00:49:57	2008-07-03 00:50:36	3752301	3752345	Ryan	RFCMs and SHORTs on (all V's and about 10-15 H's are hooked up
+2911	Pal.	2008-07-03 00:52:18	2008-07-03 00:54:21	3752301	3752738	Ryan	Changed pid goals to 12MHz and 3MHz full band
+2912	Pal.	2008-07-03 00:54:58	2008-07-03 04:11:30	3752801	3795471	Ryan	RF run bemco test
+2913	Pal.	2008-07-03 04:12:04	2008-07-03 09:29:39	3795501	3884807	Matt	TV Test with GPS
+2914	Pal.	2008-07-03 13:25:57	2008-07-03 13:27:41	3884901	3885420	Ryan	Ooops. Starting a new run after an idavertant halt
+2915	Pal.	2008-07-03 13:28:27	2008-07-03 13:29:08	3885501	3885693	Ryan	Start of stopping the run to test ref clock stability
+2916	Pal.	2008-07-03 13:29:54	2008-07-03 17:17:25	3885701	3984310	Ryan	Start of stopping the run to test ref clock stability take II
+2917	Pal.	2008-07-03 17:25:14	2008-07-03 19:53:57	3984401	4082540	Ryan	Turn on after a cool start
+2918	Pal.	2008-07-03 19:54:40	2008-07-03 21:34:20	4082601	4118145	Ryan	Changed back to CPU hungry disk test
+2919	Pal.	2008-07-03 21:39:41	2008-07-03 21:41:38	4118201	4118853	Ryan	testing clock
+2920	Pal.	2008-07-04 00:48:48	2008-07-04 00:55:53	4118901	4121408	ryan	testing clock
+2921	Pal.	2008-07-04 00:59:03	2008-07-04 01:09:42	4121501	4125041	Ryan	Writing to satablades
+2922	Pal.	2008-07-04 01:49:58	2008-07-04 01:50:40	4125101	4125244	Ryan	Trying to take data with PAtrick
+2923	Pal.	2008-07-04 01:53:16	2008-07-04 01:54:28	4125301	4125636	Ryan	New run with GPS on and Patricks new firmware (mid programming)
+2924	Pal.	2008-07-04 01:58:40	2008-07-04 01:59:53	4125701	4126071	Ryan	More firmware testing
+2925	Pal.	2008-07-04 02:00:37	2008-07-04 02:15:58	4126101	4130134	Ryan	More firmware testing
+2926	Pal.	2008-07-04 02:16:26	2008-07-04 02:17:21	4130201	4130429	Ryan	One SURf programmed?
+2927	Pal.	2008-07-04 15:03:57	2008-07-04 15:46:55	4130501	4130541	Ryan	Quick run to test new event writing
+2928	Pal.	2008-07-04 15:50:15	2008-07-04 15:50:40	4130501	4130599	Ryan	Quick run to test new event writing
+2929	Pal.	2008-07-04 16:21:42	2008-07-04 16:22:04	4130701	4130799	Ryan	New version of the firmware on all the SURFs, will it work or crash horribily
+2930	Pal.	NO ROOT FILE				Ryan	now with updated surfDriver
+2931	Pal.	2008-07-04 16:37:00	2008-07-04 16:37:26	4131001	4131099	Ryan	now with updated surfDriver
+2932	Pal.	NO ROOT FILE				Ryan	Now with SURF 2?
+2933	Pal.	NO ROOT FILE				Ryan	Short run before reprogramming
+2934	Pal.	NO ROOT FILE				Ryan	Pedestal Run with RFCMs + shorts
+2935	Pal.	NO ROOT FILE				Ryan	RFCM + Short + Pulser 
+2936	Pal.	NO ROOT FILE				Ryan	All but phi sectors 1&2 masked offf
+2937	Pal.	NO ROOT FILE				Ryan	RFCMs off?
+2938	Pal.	NO ROOT FILE				Ryan	RFCMs off?
+2939	Pal.	NO ROOT FILE				Ryan	RFCMs Back on who knows
+2940	Pal.	NO ROOT FILE				Ryan	Trigger testing, with pulser
+2941	Pal.	NO ROOT FILE				Ryan	Testing event writing with zlib
+2942	Pal.	NO ROOT FILE				Ryan	Back to old stupid way of writing data
+2943	Pal.	NO ROOT FILE				Ryan	Testing disk buffering
+2944	Pal.	NO ROOT FILE				Ryan	Test with a 33MHz clock??
+2945	Pal.	NO ROOT FILE				Ryan	Test with a 33MHz clock?? And pps triggers
+2946	Pal.	NO ROOT FILE				Ryan	Software triggered run to get statistics on clock
+2947	Pal.	NO ROOT FILE				Ryan 	10000 software triggered run for clock fiun
+2948	Pal.	NO ROOT FILE				Ryan 	10000 software triggered run for clock fun at 125MHz
+2949	Pal.	NO ROOT FILE				Ryan 	Fixed trigNum problem?
+2950	Pal.	NO ROOT FILE				Ryan 	Learning to count
+2951	Pal.	NO ROOT FILE				Ryan 	Claims of working L2 and L3 rates
+2952	Pal.	NO ROOT FILE				Ryan	Testing L2 and L3
+2953	Pal.	NO ROOT FILE				Ryan	Testing clock stability with 300MHz reference in SURF 1, Chan 1
+2954	Pal.	NO ROOT FILE				Ryan	Testing clock stability with 300MHz reference in SURF 1, Chan 1
+2955	Pal.	NO ROOT FILE				Ryan	Testing clock stability with different 300MHz reference in SURF 1, Chan 1
+2956	Pal.	NO ROOT FILE				Ryan	Testing clock stability with different 1V amplitude, 2V peak to peak, 300MHz reference in SURF 1, Chan 8
+2957	Pal.	NO ROOT FILE				Ryan	Testing interspersed turf rates
+2958	Pal.	NO ROOT FILE				Ryan	Testing interspersed turf rates
+2959	Pal.	NO ROOT FILE				Ryan	Testing interspersed turf rates
+2960	Pal.	NO ROOT FILE				Ryan	New event counter startng at 1?
+2961	Pal.	NO ROOT FILE				Ryan	Now at 600MHz, 1 Volt amplitude chan 8, surf 1
+2962	Pal.	NO ROOT FILE				Ryan	Now at 600MHz, 1 Volt amplitude chan 8, surf 1 -- Added 12way splitter to check attenuation factor
+2963	Pal.	NO ROOT FILE				Patrick	Don't think this will actually do anything...
+2964	Pal.	NO ROOT FILE				Ryan	Quick test run
+2967	Pal.	NO ROOT FILE				Ryan	Eff test
+2968	Pal.	NO ROOT FILE				Ryan	Eff test -- re pulser at 10Hz
+2969	Pal.	NO ROOT FILE				Ryan	new run for los testing
+2970	Pal.	NO ROOT FILE				Ryan	Testing threshold setting
+2971	Pal.	NO ROOT FILE				Ryan	Changing pid goal on low band to 10MHz
+2972	Pal.	NO ROOT FILE				Ryan	Threshold Scan with everything hooked up
+2973	Pal.	NO ROOT FILE				Ryan	Changing pid goal on low band to 10MHz -- tweaked PID parameters
+2974	Pal.	NO ROOT FILE				Ryan	Another threshold scan, this time with 1ms sleep after DAC setting
+2975	Pal.	NO ROOT FILE				Ryan	Another threshold scan, this time with 1ms sleep after DAC setting and 30ms sleep between reads
+2976	Pal.	NO ROOT FILE				Ryan	Another threshold scan, this time with 1ms sleep after DAC setting and 50ms sleep after writing DAC
+2977	Pal.	NO ROOT FILE				Ryan	Last threshold scan (for a while)
+2978	Pal.	NO ROOT FILE				Ryan	Last thresh scan test
+2979	Pal.	NO ROOT FILE				Ryan	Trying new setup with wait and four sets of PID parameters
+2980	Pal.	NO ROOT FILE				Ryan	Trying new setup with wait and four sets of PID parameters
+2981	Pal.	NO ROOT FILE				Ryan	Trying new setup with wait and four sets of PID parameters -- new low band setting
+2982	Pal.	NO ROOT FILE				Ryan	Trying new setup with wait and four sets of PID parameters -- new full band setting -- pulser at 10Hz
+2983	Pal.	NO ROOT FILE				Ryan	PID goals set to 12,8,8,2MHz
+2984	Pal.	NO ROOT FILE				Ryan	PID goals set to 12,8,8,2MHz
+2985	Pal.	NO ROOT FILE				Ryan	PID goals set to 12,8,8,2MHz -- Turned off pps triggers and removed sleep when writing DAC vals
+2986	Pal.	NO ROOT FILE				Ryan	Trying to fix start test
+2987	Pal.	NO ROOT FILE				Ryan	Eff scan run
+2988	Pal.	NO ROOT FILE				Ryan	Testing dynamic phi masking
+2989	Pal.	NO ROOT FILE				Ryan	Testing dynamic phi masking
+2990	Pal.	NO ROOT FILE				Ryan	Testing dynamic phi masking
+2991	Pal.	2008-07-05 22:57:04	2008-07-05 23:05:18	4275801	4285470	Ryan	Testing dynamic phi masking
+2992	Pal.	NO ROOT FILE				Ryan	Playing around with thresholds and other gubbins
+2993	Pal.	2008-07-05 23:24:13	2008-07-05 23:37:16	4290201	28	Ryan	Playing around with thresholds and other gubbins
+2994	Pal.	NO ROOT FILE				Ryan 	Testing external trigger
+2995	Pal.	2008-07-05 23:48:25	2008-07-05 23:48:35	4292901	4292906	Ryan 	Testing external trigger
+2997	Pal.	2008-07-06 00:07:25	2008-07-06 00:07:43	4292901	4293099	Ryan 	Testing external trigger
+2998	Pal.	NO ROOT FILE				Ryan	Ext trig test with delay set to 100ns (from 160ns)
+2999	Pal.	NO ROOT FILE				Ryan	Ext trig test with delay set to 90ns
+3000	Pal.	NO ROOT FILE				Ryan	Pedestal run with all the whistles and bells
+3001	Pal.	NO ROOT FILE				Ryan	Running with ext trigger enabled
+3002	Pal.	NO ROOT FILE				Ryan	Running with ext trigger disabled
+3003	Pal.	NO ROOT FILE				Ryan	Trig Eff study with 14,9,9,2MHz
+3004	Pal.	NO ROOT FILE				Ryan	Trig Eff study with 17,10,9,2MHz -- Not sure servo is smart enough to work out which side of the bump it is on
+3005	Pal.	NO ROOT FILE				Ryan	Playing with full band PID parameters
+3006	Pal.	NO ROOT FILE				Ryan	Testing 20,12,12,2 MHz PID Goals
+3007	Pal.	NO ROOT FILE				Ryan	Testing 20,12,12,2 MHz PID Goals
+3008	Pal.	NO ROOT FILE				Ryan	Patrick broke something
+3009	Pal.	NO ROOT FILE				Ryan	New RF triggered run with trigger patterns and event numbers ??
+3010	Pal.	NO ROOT FILE				Ryan	Threshold Scan
+3011	Pal.	NO ROOT FILE				Ryan	Threshold Scan -- Take 2
+3012	Pal.	NO ROOT FILE				Ryan	Fast threshold scan
+3013	Pal.	NO ROOT FILE				Ryan	Fast threshold scan
+3014	Pal.	NO ROOT FILE				Ryan	Fast threshold scan
+3015	Pal.	NO ROOT FILE				Ryan	Fast threshold scan
+3016	Pal.	NO ROOT FILE				Ryan	Fast threshold scan
+3017	Pal.	NO ROOT FILE				Ryan	Testing threshold scan
+3018	Pal.	NO ROOT FILE				Ryan	Testing threshold scan
+3019	Pal.	NO ROOT FILE				Ryan	Ill defined run in ill defined conditioned
+3020	Pal.	NO ROOT FILE				Ryan	Lowered pid goals to 10,5,5,1 and masked off Nadir's
+3021	Pal.	NO ROOT FILE				Ryan 	First run with new surfhk data format
+3022	Pal.	NO ROOT FILE				Ryan	Playing with PID Goals
+3023	Pal.	NO ROOT FILE				Ryan	Debugging surf hk
+3024	Pal.	NO ROOT FILE				Ryan	Debugging surf hk
+3025	Pal.	NO ROOT FILE				Ryan	Now I understand
+3026	Pal.	NO ROOT FILE				Ryan	Setting things to some values
+3027	Pal.	NO ROOT FILE				Ryan	Testing Turf Register dumping
+3028	Pal.	NO ROOT FILE				Ryan	Testing Turf Register dumping
+3029	Pal.	NO ROOT FILE				Ryan	Testing Turf Register dumping
+3030	Pal.	NO ROOT FILE				Ryan	Efficiency scan -- Atten at 44dB 8.47sigma
+3031	Pal.	NO ROOT FILE				Ryan	Efficiency scan -- 15,8,8,4 MHz Atten at 44dB 8.47sigma
+3032	Pal.	2008-07-06 22:39:25	2008-07-06 22:42:08	4354401	4355499	Ryan	Efficiency scan -- 12,5,5,0.5 MHz Atten at 44dB 8.47sigma
+3033	Pal.	NO ROOT FILE				Ryan	Efficiency scan -- 12,5,5,1 MHz Atten at 44dB 8.47sigma
+3034	Pal.	NO ROOT FILE				Ryan	Test masking off low band
+3035	Pal.	NO ROOT FILE				Ryan	Testing masking off full band
+3036	Pal.	NO ROOT FILE				Ryan	Testing masking off high band
+3037	Pal.	NO ROOT FILE				Ryan	Testing masking off mid band
+3038	Pal.	NO ROOT FILE				Ryan	Setting thresholds all bands open
+3039	Pal.	NO ROOT FILE				Ryan	Test Masking off bands
+3040	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 44dB
+3041	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 45dB
+3042	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 46dB
+3043	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 47dB
+3044	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 48dB
+3045	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 49dB
+3046	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 50dB
+3047	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 51dB
+3048	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 52dB
+3049	Pal.	NO ROOT FILE				Ryan	Run with ill defined pulser setup
+3050	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 38dB   (38dB is 8.35 sigma)
+3051	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 39dB  
+3052	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 40dB  
+3053	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 42dB  
+3054	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 44dB  
+3055	Pal.	NO ROOT FILE					Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 47dB  
+3056	Pal.	NO ROOT FILE				Ryan	Efficiency Scan -- PID Goals 12,5,5,1MHz Attenuator at 50dB  
+3057	Pal.	NO ROOT FILE				ryan	fake los test
+3058	Pal.	NO ROOT FILE				Ryan	more fake testing
+3059	Pal.	NO ROOT FILE				Ryan	more fake testing
+3060	Pal.	NO ROOT FILE				Ryan	more fake testing
+3061	Pal.	NO ROOT FILE				Ryan	more fake testing
+3062	Pal.	NO ROOT FILE				Ryan	more fake testing
+3063	Pal.	NO ROOT FILE				Ryan	more fake testing
+3064	Pal.	NO ROOT FILE				Ryan	Overnight run with pulser at something
+3065	Pal.	NO ROOT FILE				Ryan	Should still be an 8.35 sigma pulse at 38dB running at 10Hz from the G12 PPS
+3066	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 39dB
+3067	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 40dB
+3068	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 41dB
+3069	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 42dB
+3070	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 43dB
+3071	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 43dB
+3072	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 44dB
+3073	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 45dB
+3074	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 45dB
+3075	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 46dB
+3076	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 47dB
+3077	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 48dB
+3078	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 49dB
+3079	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 50dB
+3080	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 51dB
+3081	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 52dB
+3082	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 53dB
+3083	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 54dB
+3084	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 55dB
+3085	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 56dB
+3086	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 4dB
+3087	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 43dB
+3088	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 42dB
+3089	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 41dB
+3090	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 40dB
+3091	Pal.	NO ROOT FILE				Ryan	Eff scan, 10Hz PPS atten at 39dB
+3092	Pal.	2008-07-08 17:22:51	2008-07-08 17:24:14	4408801	4409791	Ryan	Eff scan, 10Hz PPS atten at 38dB
+3093	Pal.	2008-07-08 18:28:01	2008-07-08 18:29:43	4409801	4410791	Ryan	Eff scan, 10Hz PPS atten at 45dB
+3094	Pal.	2008-07-08 18:30:36	2008-07-08 18:32:06	4410801	4411521	Ryan	Eff scan, 10Hz PPS atten at 46dB
+3095	Pal.	2008-07-08 18:32:48	2008-07-08 18:34:12	4411601	4412109	Ryan	Eff scan, 10Hz PPS atten at 47dB
+3096	Pal.	2008-07-08 18:35:00	2008-07-08 18:36:24	4412201	4412547	Ryan	Eff scan, 10Hz PPS atten at 48dB
+3097	Pal.	2008-07-08 18:37:07	2008-07-08 18:38:37	4412601	4412880	Ryan	Eff scan, 10Hz PPS atten at 49dB
+3098	Pal.	2008-07-08 18:39:41	2008-07-08 18:45:16	4412901	4413891	Ryan	Eff scan, 10Hz PPS atten at 50dB
+3099	Pal.	2008-07-08 19:01:02	2008-07-08 19:02:26	4413901	4414149	Ryan	Eff scan, 10Hz PPS atten at 51dB
+3100	Pal.	2008-07-08 19:03:19	2008-07-08 19:04:49	4414201	4414466	Ryan	Eff scan, 10Hz PPS atten at 52dB
+3101	Pal.	2008-07-08 19:05:45	2008-07-08 19:07:10	4414501	4414731	Ryan	Eff scan, 10Hz PPS atten at 53dB
+3102	Pal.	2008-07-08 19:08:01	2008-07-08 19:10:22	4414801	4415196	Ryan	Eff scan, 10Hz PPS atten at 54dB
+3103	Pal.	2008-07-08 19:11:10	2008-07-08 19:12:35	4415201	4415459	Ryan	Eff scan, 10Hz PPS atten at 55dB
+3104	Pal.	2008-07-08 19:13:28	2008-07-08 19:15:03	4415501	4415788	Ryan	Eff scan, 10Hz PPS atten at 55dB
+3105	Pal.	NO ROOT FILE				Ryan	Eff scan, Ext Trig run at 44dB
+3106	Pal.	NO ROOT FILE				Ryan	Eff scan, Ext Trig run at 38dB
+3107	Pal.	NO ROOT FILE				Ryan	ext trig test run
+3108	Pal.	NO ROOT FILE				Ryan	rf trig test run
+3109	Pal.	NO ROOT FILE				Ryan	rf trig test run
+3110	Pal.	NO ROOT FILE				Ryan	rf trig test run
+3111	Pal.	NO ROOT FILE				Ryan	rf trig test run
+3112	Pal.	NO ROOT FILE				Ryan	rf trig test run
+3113	Pal.	NO ROOT FILE				Ryan	rf trig test run
+3114	Pal.	NO ROOT FILE				Ryan	rf trig test run
+3115	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 38dB
+3116	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 39dB
+3117	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 40dB
+3118	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 41dB
+3119	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 42dB
+3120	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 43dB
+3121	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 44dB
+3122	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 45dB
+3123	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 46dB
+3124	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 47dB
+3125	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 48dB
+3126	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 49dB
+3127	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 50dB
+3128	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 51dB
+3129	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 52dB
+3130	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 53dB
+3131	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 54dB
+3132	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 55dB
+3133	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 56dB
+3134	Pal.	NO ROOT FILE				Matt	effScan SURF 2 - atten 41dB
+3135	Pal.	NO ROOT FILE				Ryan	fake los run
+3136	Pal.	NO ROOT FILE				Ryan	Test with etxernal pulser on SURF 3
+3137	Pal.	NO ROOT FILE				Matt	Test run
+3138	Pal.	NO ROOT FILE				Matt	Test run - pulser in SURF 3
+3139	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 38dB
+3140	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 39dB
+3141	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 40dB
+3142	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 41dB
+3143	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 42dB
+3144	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 43dB
+3145	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 44dB
+3146	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 45dB
+3147	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 46dB
+3148	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 47dB
+3149	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 48dB
+3150	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 49dB
+3151	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 50dB
+3152	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 51dB
+3153	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 52dB
+3154	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 53dB
+3155	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 54dB
+3156	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 55dB
+3157	Pal.	NO ROOT FILE				Matt	effScan SURF 3 - atten 56dB
+3158	Pal.	NO ROOT FILE				Matt	effScan SURF 4 - atten 38dB
+3159	Pal.	NO ROOT FILE				Matt	effScan SURF 4 - atten 38dB - High Band Antenna 11 dead
+3160	Pal.	NO ROOT FILE				Matt	test run to set thresholds
+3161	Pal.	NO ROOT FILE				Patrick	LOS run - SURF 5 is hooked up (?)
+3162	Pal.	NO ROOT FILE				Ryan	Test run with new version of Archived, hopefully should just work
+3163	Pal.	NO ROOT FILE				Ryan	Test run with new version of Archived, hopefully should just work
+3164	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 38dB
+3165	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 39dB
+3166	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 40dB
+3167	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 41dB
+3168	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 42dB
+3169	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 43dB
+3170	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 44dB
+3171	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 45dB
+3172	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 46dB
+3173	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 47dB
+3174	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 48dB
+3175	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 49dB
+3176	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 50dB
+3177	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 51dB
+3178	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 52dB
+3179	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 53dB
+3180	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 54dB
+3181	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 55dB
+3182	Pal.	NO ROOT FILE				Matt	effScan SURF 5 - atten 56dB
+3183	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 38dB
+3185	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 38dB
+3186	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 38dB
+3187	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 39dB
+3188	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 40dB
+3189	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 41dB
+3190	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 42dB
+3191	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 43dB
+3192	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 44dB
+3193	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 45dB
+3194	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 46dB
+3195	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 47dB
+3196	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 48dB
+3197	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 49dB
+3198	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 50dB
+3199	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 51dB
+3200	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 52dB
+3201	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 53dB
+3202	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 54dB
+3203	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 55dB
+3204	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 56dB
+3205	Pal.	NO ROOT FILE				Matt	effScan SURF 6 - atten 56dB
+3206	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - test run
+3207	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 38dB
+3208	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 39dB
+3209	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 40dB
+3210	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 41dB
+3211	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 42dB
+3212	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 43dB
+3213	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 44dB
+3214	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 45dB
+3215	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 46dB
+3216	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 47dB
+3217	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 48dB
+3218	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 49dB
+3219	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 50dB
+3220	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 51dB
+3221	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 52dB
+3222	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 53dB
+3223	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 54dB
+3224	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 55dB
+3225	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 56dB
+3226	Pal.	NO ROOT FILE				Matt	effScan SURF 7 - atten 56dB
+3227	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 56dB
+3228	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - test run
+3229	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 38dB
+3230	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 39dB
+3231	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 40dB
+3232	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 41dB
+3233	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 42dB
+3234	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 43dB
+3235	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 44dB
+3236	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 45dB
+3237	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 46dB
+3238	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 47dB
+3239	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 48dB
+3240	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 49dB
+3241	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 50dB
+3242	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 51dB
+3243	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 52dB
+3244	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 53dB
+3245	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 54dB
+3246	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 55dB
+3247	Pal.	NO ROOT FILE				Matt	effScan SURF 8 - atten 56dB
+3248	Pal.	NO ROOT FILE				Ryan	Test run with new SURF firmware will the readout work
+3249	Pal.	NO ROOT FILE				Ryan	Long runto look for sync slips
+3250	Pal.	NO ROOT FILE				Ryan	Long runto look for sync slips
+3251	Pal.	NO ROOT FILE				Ryan	Long run to look for sync slips and trigType
+3252	Pal.	NO ROOT FILE				Ryan	Just running
+3255	Pal.	NO ROOT FILE				Ryan	No idea
+3256	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3258	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3259	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3260	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3261	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3262	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3263	Pal.	NO ROOT FILE				Ryan	Test run with SURF/TURF firmware in an indeterminate state
+3264	Pal.	NO ROOT FILE				Ryan	Changed the clear order of the SURF/TURF to make things happier
+3265	Pal.	NO ROOT FILE				Ryan	Still playing around with SURF/TURF event clearing
+3266	Pal.	NO ROOT FILE				Ryan	Still playing around with SURF/TURF event clearing
+3267	Pal.	NO ROOT FILE				Ryan	Long run to look for events slipping
+3268	Pal.	NO ROOT FILE				Matt	Pulser sent into phi 15, 16 & 1, 3dB atten on 15 and 1
+3269	Pal.	NO ROOT FILE				Matt	Pulser sent into phi 15, 16 & 1, 3dB atten on 15 and 1
+3270	Pal.	NO ROOT FILE				Matt	Pulser sent into phi 15, 16 & 1, 3dB atten on 15 and 1
+3271	Pal.	NO ROOT FILE				Ryan	Run with input pulse into 8 channels (phi sectors 15,16,1). New version of AcqdStartStruct_t and now using reserved bytes in AnitaEventheader. the attenuator is set to 33dB which according to Konstantin is 7.73 sigma"
+3272	Pal.	NO ROOT FILE				Ryan	Enabled nadir triggers and  are currently running the L1 rates at 100kHz in each of the bands
+3273	Pal.	NO ROOT FILE				Ryan	Enabled nadir triggers and  are currently running the nadir PID goals at 500kHz in each of the bands
+3274	Pal.	NO ROOT FILE				Ryan	Still pulsing with 8 chnanels and atten set to 33db. Changed Nadir pid goals to 500,500,500,200kHz. Masked off upper phi sectors. Will we trigger??
+3275	Pal.	NO ROOT FILE				Ryan	Debugging TURF Rate output
+3276	Pal.	NO ROOT FILE				Ryan	Fixed bug in TURF Rate reporting, now L1's are correctly mapped in both event and hk readout. We still have the lower ring masked out so we are triggering on just the upper and nadir rings.
+3277	Pal.	NO ROOT FILE				Ryan	Fixed bug in TURF Rate reporting, now L1's are correctly mapped in both event and hk readout. We have the upper ring masked out so we are triggering on just the lower and nadir rings.
+3278	Pal.	NO ROOT FILE				Ryan	Playing around with the pid gain parameters
+3279	Pal.	NO ROOT FILE				Ryan	Playing around with the pid gain parameters --still
+3280	Pal.	NO ROOT FILE				Ryan	Playing around with the pid gain parameters --still -- slowed down surf hk to 30000
+3281	Pal.	NO ROOT FILE				Ryan	Threshold scan
+3282	Pal.	NO ROOT FILE				Ryan	New run to set thresholds
+3283	Pal.	NO ROOT FILE				Matt	atten Scan -- Pulser in Phis 15, 16 & 1 with nadirs -- no masking -- 33dB (+3dB on phi 15 & 1)
+3284	Pal.	NO ROOT FILE				Matt	atten Scan -- Pulser in Phis 15, 16 & 1 with nadirs -- no masking -- 34dB (+3dB on phi 15 & 1)
+3285	Pal.	NO ROOT FILE				Matt	atten Scan -- Pulser in Phis 15, 16 & 1 with nadirs -- no masking -- 35dB (+3dB on phi 15 & 1)
+3286	Pal.	NO ROOT FILE				Matt	atten Scan -- Pulser in Phis 15, 16 & 1 with nadirs -- no masking -- 36dB (+3dB on phi 15 & 1)
+3287	Pal.	NO ROOT FILE				Matt	atten Scan -- Pulser in Phis 15, 16 & 1 with nadirs -- no masking -- 37dB (+3dB on phi 15 & 1)
+3288	Pal.	NO ROOT FILE				Matt	atten Scan -- Pulser in Phis 15, 16 & 1 with nadirs -- no masking -- 38dB (+3dB on phi 15 & 1)
+3289	Pal.	NO ROOT FILE				Matt	atten Scan -- Pulser in Phis 15, 16 & 1 with nadirs -- no masking -- 39dB (+3dB on phi 15 & 1)
+3290	Pal.	NO ROOT FILE				Matt	atten Scan -- Pulser in Phis 15, 16 & 1 with nadirs -- no masking -- 40dB (+3dB on phi 15 & 1)
+3291	Pal.	NO ROOT FILE				Matt	atten Scan -- Pulser in Phis 15, 16 & 1 with nadirs -- no masking -- 41dB (+3dB on phi 15 & 1)
+3292	Pal.	NO ROOT FILE				Matt	atten Scan -- Pulser in Phis 15, 16 & 1 with nadirs -- no masking -- 42dB (+3dB on phi 15 & 1)
+3293	Pal.	NO ROOT FILE				Matt	atten Scan -- Pulser in Phis 15, 16 & 1 with nadirs -- no masking -- 43dB (+3dB on phi 15 & 1)
+3294	Pal.	NO ROOT FILE				Matt	atten Scan -- Pulser in Phis 15, 16 & 1 with nadirs -- no masking -- 44dB (+3dB on phi 15 & 1)
+3295	Pal.	NO ROOT FILE				Matt	atten Scan -- Pulser in Phis 15, 16 & 1 with nadirs -- no masking -- 45dB (+3dB on phi 15 & 1)
+3296	Pal.	NO ROOT FILE				Matt	atten Scan -- Pulser in Phis 15, 16 & 1 with nadirs -- no masking -- 46dB (+3dB on phi 15 & 1)
+3297	Pal.	NO ROOT FILE				Matt	atten Scan -- Pulser in Phis 15, 16 & 1 with nadirs -- no masking -- 47dB (+3dB on phi 15 & 1)
+3298	Pal.	NO ROOT FILE				Ryan	Teest run to see if Archived crashes or what
+3299	Pal.	NO ROOT FILE				Ryan	First run with things set after the big crash
+3300	Pal.	NO ROOT FILE				Ryan	First run with the new kernel version and newly compiled acromag, surf, turf, los and tews thingies
+3301	Pal.	NO ROOT FILE				Ryan	First run trying to write lots of lovely data to disk
+3302	Pal.	NO ROOT FILE				Ryan	Second run trying to write data to the usb disks
+3303	Pal.	NO ROOT FILE				Ryan	Hopefully a long overnight run with pulsing 3 phi sectors. Attenuator at 36dB
+3304	Pal.	NO ROOT FILE				Ryan	Hopefully a long overnight run with pulsing 3 phi sectors. Attenuator at 36dB
+3305	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3306	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3307	Pal.	NO ROOT FILE				Ryan	First run of the morning. I wonder how long we took data before crashing last night
+3308	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3309	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3310	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3311	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3312	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3313	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3314	Pal.	NO ROOT FILE				Ryan	Trying to get a run working this morning. Things aren't happy in flight CPU land.
+3315	Pal.	NO ROOT FILE				Ryan	After reboot. Trying to take data.
+3317	Pal.	NO ROOT FILE				Ryan	Playing with Nadir PID Goals
+3318	Pal.	NO ROOT FILE				Ryan	Masked off Nadir channels
+3319	Pal.	NO ROOT FILE				Ryan	Tweaking PID goals to run at a reasonable rate
+3320	Pal.	NO ROOT FILE				Ryan	New run just playing around testing things really
+3321	Pal.	NO ROOT FILE				Ryan	Increasing the PID goals a little
+3322	Pal.	NO ROOT FILE				Ryan	This is just a timing run to test data is working
+3323	Pal.	NO ROOT FILE				Ryan	This is just a timing run to test data is working
+3324	Pal.	NO ROOT FILE				Ryan	This is just a timing run to test data is working
+3325	Pal.	NO ROOT FILE				Matt	test run before atten scans
+3326	Pal.	NO ROOT FILE				Matt	Atten Scan -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 33dB
+3327	Pal.	NO ROOT FILE				Matt	Atten Scan -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 34dB
+3328	Pal.	NO ROOT FILE				Matt	Atten Scan -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 33dB
+3329	Pal.	NO ROOT FILE				Matt	Atten Scan -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 34dB
+3330	Pal.	NO ROOT FILE				Matt	Atten Scan -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 35dB
+3331	Pal.	NO ROOT FILE				Matt	Atten Scan -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 35dB
+3332	Pal.	NO ROOT FILE				Matt	Atten Scan -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 35dB
+3333	Pal.	NO ROOT FILE				Matt	Atten Scan -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 36dB
+3334	Pal.	NO ROOT FILE				Matt	Atten Scan -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 37dB
+3335	Pal.	NO ROOT FILE				Matt	Atten Scan -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 38dB
+3336	Pal.	NO ROOT FILE				Matt	Atten Scan -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 38dB
+3337	Pal.	NO ROOT FILE				Ryan	Back to 2.6.24.4 will things work??
+3338	Pal.	NO ROOT FILE				Ryan	Test run before Matt restarts the endless efficiency scan. Pulser still running.
+3339	Pal.	NO ROOT FILE				Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 33dB
+3340	Pal.	2008-07-12 15:48:21	2008-07-12 15:50:18	5146601	5148591	Ryan	Where is the pulser???
+3341	Pal.	2008-07-12 15:51:43	2008-07-12 15:53:14	5148601	5150081	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 34dB
+3342	Pal.	2008-07-12 15:54:32	2008-07-12 15:55:58	5150101	5151484	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 35dB
+3343	Pal.	2008-07-12 15:56:26	2008-07-12 15:57:53	5151501	5152922	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 36dB
+3344	Pal.	2008-07-12 15:58:27	2008-07-12 15:59:56	5153001	5154482	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 37dB
+3345	Pal.	2008-07-12 16:00:43	2008-07-12 16:02:09	5154501	5155927	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 38dB
+3346	Pal.	2008-07-12 16:02:48	2008-07-12 16:04:13	5156001	5157407	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 39dB
+3347	Pal.	2008-07-12 16:04:51	2008-07-12 16:06:53	5157501	5159491	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 40dB
+3348	Pal.	2008-07-12 16:09:01	2008-07-12 16:10:45	5159501	5161117	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 41dB
+3349	Pal.	2008-07-12 16:11:28	2008-07-12 16:12:56	5161201	5162414		atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 42dB
+3350	Pal.	2008-07-12 16:13:30	2008-07-12 16:15:30	5162501	5163757	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 43dB
+3351	Pal.	2008-07-12 16:17:17	2008-07-12 16:18:46	5163801	5164542	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 44dB
+3352	Pal.	2008-07-12 16:19:30	2008-07-12 16:20:55	5164601	5165194	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 45dB
+3353	Pal.	2008-07-12 16:21:35	2008-07-12 16:23:01	5165201	5165832	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 46dB
+3354	Pal.	2008-07-12 16:23:33	2008-07-12 16:25:04	5165901	5166527	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 47dB
+3355	Pal.	2008-07-12 16:25:36	2008-07-12 16:27:00	5166601	5167249	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 48dB
+3356	Pal.	2008-07-12 16:27:40	2008-07-12 16:27:49	5167301	5167356	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 49dB
+3357	Pal.	2008-07-12 16:28:30	2008-07-12 16:29:56	5167301	5167883	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 49dB
+3358	Pal.	2008-07-12 16:30:42	2008-07-12 16:31:56	5167901	5168396	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 50dB
+3359	Pal.	2008-07-12 16:32:24	2008-07-12 16:35:39	5168401	5169719	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 50dB
+3360	Pal.	2008-07-12 16:36:08	2008-07-12 16:37:32	5169801	5170360	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 50dB
+3361	Pal.	2008-07-12 16:38:00	2008-07-12 16:39:37	5170401	5171057	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- no masking -- 51dB
+3362	Pal.	2008-07-12 16:54:57	2008-07-12 16:56:22	5171101	5172234	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 33dB
+3363	Pal.	2008-07-12 16:56:59	2008-07-12 16:58:24	5172301	5173467	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 34dB
+3364	Pal.	2008-07-12 16:59:10	2008-07-12 17:00:42	5173501	5174727	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 35dB
+3365	Pal.	2008-07-12 17:01:56	2008-07-12 17:03:24	5174801	5175980	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 36dB
+3366	Pal.	2008-07-12 17:03:57	2008-07-12 17:05:23	5176001	5177136	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 37dB
+3367	Pal.	2008-07-12 17:05:56	2008-07-12 17:07:21	5177201	5178279	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 38dB
+3368	Pal.	2008-07-12 17:07:53	2008-07-12 17:09:19	5178301	5179403	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 39dB
+3369	Pal.	2008-07-12 17:10:00	2008-07-12 17:11:25	5179501	5180515	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 40dB
+3370	Pal.	2008-07-12 18:35:41	2008-07-12 18:37:05	5180601	5181358	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 41dB
+3371	Pal.	2008-07-12 18:37:36	2008-07-12 18:39:12	5181401	5182016	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 42dB
+3372	Pal.	2008-07-12 18:39:38	2008-07-12 18:41:12	5182101	5182538	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 43dB
+3373	Pal.	2008-07-12 18:41:43	2008-07-12 18:43:22	5182601	5182972	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 44dB
+3374	Pal.	2008-07-12 18:44:00	2008-07-12 18:45:33	5183001	5183344	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 45dB
+3375	Pal.	2008-07-12 18:46:06	2008-07-12 18:47:30	5183401	5183676	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 46dB
+3376	Pal.	2008-07-12 18:48:01	2008-07-12 18:50:31	5183701	5184173	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 47dB
+3377	Pal.	2008-07-12 18:52:12	2008-07-12 18:53:36	5184201	5184487	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 48dB
+3378	Pal.	2008-07-12 18:54:09	2008-07-12 18:55:33	5184501	5184767	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 49dB
+3379	Pal.	2008-07-12 18:56:23	2008-07-12 18:57:46	5184801	5185092	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 50dB
+3380	Pal.	2008-07-12 18:58:50	2008-07-12 19:00:17	5185101	5185381	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- uppers masked -- 51dB
+3381	Pal.	2008-07-12 19:01:48	2008-07-12 19:03:15	5185401	5186526	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 33dB
+3382	Pal.	2008-07-12 19:04:11	2008-07-12 19:05:37	5186601	5187668	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 34dB
+3383	Pal.	2008-07-12 19:06:23	2008-07-12 19:08:19	5187701	5189208	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 35dB
+3384	Pal.	2008-07-12 19:10:21	2008-07-12 19:11:47	5189301	5190401	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 36dB
+3385	Pal.	2008-07-12 19:12:19	2008-07-12 19:13:44	5190501	5191564	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 37dB
+3386	Pal.	2008-07-12 19:14:16	2008-07-12 19:15:41	5191601	5192663	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 37dB
+3387	Pal.	2008-07-12 19:17:06	2008-07-12 19:18:37	5192701	5193856	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 39dB
+3388	Pal.	2008-07-12 19:19:16	2008-07-12 19:20:40	5193901	5194837	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 40dB
+3389	Pal.	2008-07-12 19:21:15	2008-07-12 19:23:10	5194901	5195921	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 41dB
+3390	Pal.	2008-07-12 19:23:43	2008-07-12 19:26:21	5196001	5196960	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 42dB
+3391	Pal.	2008-07-12 19:27:01	2008-07-12 19:28:27	5197001	5197346	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 43dB
+3392	Pal.	2008-07-12 19:28:59	2008-07-12 19:30:48	5197401	5197775	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 44dB
+3393	Pal.	2008-07-12 19:31:25	2008-07-12 19:32:59	5197801	5198087	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 45dB
+3394	Pal.	2008-07-12 19:33:31	2008-07-12 19:35:25	5198101	5198414	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 46dB
+3395	Pal.	2008-07-12 19:35:55	2008-07-12 19:37:25	5198501	5198734	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 47dB
+3396	Pal.	2008-07-12 19:37:56	2008-07-12 19:39:22	5198801	5199048	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 48dB
+3397	Pal.	2008-07-12 19:39:52	2008-07-12 19:41:38	5199101	5199392	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 49dB
+3398	Pal.	2008-07-12 19:42:20	2008-07-12 19:43:43	5199401	5199642	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 50dB
+3399	Pal.	2008-07-12 19:44:20	2008-07-12 19:45:45	5199701	5199937	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- lowers masked -- 51dB
+3400	Pal.	2008-07-12 19:47:22	2008-07-12 19:47:36	5200001	5200177	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 33dB
+3401	Pal.	2008-07-12 19:48:01	2008-07-12 19:49:25	5200201	5201149	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 33dB
+3402	Pal.	2008-07-12 19:50:06	2008-07-12 19:51:31	5201201	5202169	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 34dB
+3403	Pal.	2008-07-12 19:52:07	2008-07-12 19:53:49	5202201	5203335	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 35dB
+3404	Pal.	2008-07-12 19:54:45	2008-07-12 19:56:57	5203401	5204849	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 36dB
+3405	Pal.	2008-07-12 19:57:31	2008-07-12 19:58:56	5204901	5205850	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 37dB
+3406	Pal.	2008-07-12 19:59:32	2008-07-12 20:01:54	5205901	5207451	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 38dB
+3407	Pal.	2008-07-12 20:02:42	2008-07-12 20:05:47	5207501	5209491	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 39dB
+3408	Pal.	2008-07-12 20:13:41	2008-07-12 20:15:09	5209501	5210446	Ryan	Changed the way that things are masked and set in the start test function
+3409	Pal.	2008-07-12 20:23:30	2008-07-12 20:25:12	5210501	5211546	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 40dB
+3410	Pal.	2008-07-12 20:27:46	2008-07-12 20:30:10	5211601	5213045	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 40dB
+3411	Pal.	2008-07-12 20:31:30	2008-07-12 20:32:55	5213101	5213870	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 41dB -- turned on setting turf eventid run epoch
+3412	Pal.	2008-07-12 20:34:05	2008-07-12 20:36:28	5213901	5214848	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 42dB
+3413	Pal.	2008-07-12 20:36:54	2008-07-12 20:38:18	5214901	5215250	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 43dB
+3414	Pal.	2008-07-12 20:38:43	2008-07-12 20:40:21	5215301	5215573	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 44dB
+3415	Pal.	2008-07-12 20:40:50	2008-07-12 20:41:44	5215601	5215700	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 45dB
+3416	Pal.	2008-07-12 20:42:02	2008-07-12 20:42:54	5215801	5215910	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 45dB
+3417	Pal.	2008-07-12 20:43:10	2008-07-12 20:44:34	5216001	5216151	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 46dB
+3418	Pal.	2008-07-12 20:45:17	2008-07-12 20:46:36	5216201	5216312	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 47dB
+3419	Pal.	2008-07-12 20:47:54	2008-07-12 20:49:17	5216401	5216515	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 47dB
+3420	Pal.	2008-07-12 20:50:24	2008-07-12 20:50:52	5216601	5216659	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 47dB
+3421	Pal.	2008-07-12 20:51:23	2008-07-12 20:52:46	5216601	5216711	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 47dB
+3422	Pal.	2008-07-12 20:53:11	2008-07-12 20:53:28	5216801	5216847	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 48dB
+3423	Pal.	2008-07-12 20:54:06	2008-07-12 20:55:30	5216801	5216910	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 48dB
+3424	Pal.	2008-07-12 20:56:05	2008-07-12 20:57:29	5217001	5217099	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 49dB
+3425	Pal.	2008-07-12 20:58:15	2008-07-12 20:59:37	5217001	5217119	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 50dB
+3426	Pal.	2008-07-12 21:00:21	2008-07-12 21:00:42	5217201	5217253	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 51dB
+3427	Pal.	2008-07-12 21:00:55	2008-07-12 21:01:08	5217201	5217244	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 51dB
+3428	Pal.	2008-07-12 21:01:23	2008-07-12 21:02:00	5217201	5217272	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 51dB
+3429	Pal.	2008-07-12 21:02:19	2008-07-12 21:03:01	5217201	5217273	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 51dB
+3430	Pal.	2008-07-12 21:03:22	2008-07-12 21:04:45	5217201	5217327	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- nadirs masked -- 51dB
+3431	Pal.	2008-07-12 21:08:27	2008-07-12 21:17:30	5217401	5217421	Matt	Test run - triggers off for first 5 seconds
+3432	Pal.	2008-07-12 21:18:19	2008-07-12 21:18:29	5217401	5217412	Matt	Test run - triggers off for first 5 seconds
+3433	Pal.	2008-07-12 21:32:20	2008-07-12 21:32:27	5217401	5217414	Ryan	Pulser off with PID goals at 12000,5000,5000,1000 and 500,500,500,300
+3434	Pal.	2008-07-12 21:33:01	2008-07-12 21:36:00	5217401	5219391	Ryan	Pulser off with PID goals at 12000,5000,5000,1000 and 500,500,500,300 -- All masks off
+3435	Pal.	2008-07-12 21:40:33	2008-07-12 21:42:14	5219401	5220520	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- masking off -- pid goals 15000 8000 8000 2000, 5000 1000 1000 200 -- 33dB
+3436	Pal.	2008-07-12 21:43:04	2008-07-12 21:43:55	5220601	5221089	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- masking off -- pid goals 15000 8000 8000 2000, 5000 1000 1000 200 -- 35dB
+3437	Pal.	2008-07-12 22:18:03	2008-07-12 22:19:21	5221201	5222767	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- masking off -- pid goals 15000 8000 8000 2000, 5000 1000 1000 200 -- 33dB
+3438	Pal.	2008-07-12 22:20:11	2008-07-12 22:21:29	5222801	5224385	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- masking off -- pid goals 15000 8000 8000 2000, 5000 1000 1000 200 -- 35dB
+3439	Pal.	2008-07-12 22:22:19	2008-07-12 22:23:43	5224501	5226238	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- masking off -- pid goals 15000 8000 8000 2000, 5000 1000 1000 200 -- 37dB
+3440	Pal.	2008-07-12 22:24:36	2008-07-12 22:26:10	5226401	5228265	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- masking off -- pid goals 15000 8000 8000 2000, 5000 1000 1000 200 -- 39dB
+3441	Pal.	2008-07-12 22:26:57	2008-07-12 22:28:19	5228301	5229902	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- masking off -- pid goals 15000 8000 8000 2000, 5000 1000 1000 200 -- 41dB
+3442	Pal.	2008-07-12 22:29:02	2008-07-12 22:30:30	5230001	5231197	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- masking off -- pid goals 15000 8000 8000 2000, 5000 1000 1000 200 -- 43dB
+3443	Pal.	2008-07-12 22:32:47	2008-07-12 22:35:03	5231201	5232753	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- masking off -- pid goals 15000 8000 8000 2000, 5000 1000 1000 200 -- 45dB
+3444	Pal.	2008-07-12 22:35:36	2008-07-12 22:37:03	5232801	5233703	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- masking off -- pid goals 15000 8000 8000 2000, 5000 1000 1000 200 -- 47dB
+3445	Pal.	2008-07-12 22:42:32	2008-07-12 22:43:57	5233801	5234697	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- masking off -- pid goals 15000 8000 8000 2000, 5000 1000 1000 200 -- 49dB
+3446	Pal.	2008-07-12 22:44:41	2008-07-12 22:46:56	5234701	5236262	Matt	atten scan -- -- phis 15, 16 & 1 with nadirs (3db extra atten phi 15 and 1) -- masking off -- pid goals 15000 8000 8000 2000, 5000 1000 1000 200 -- 51dB
+3447	Pal.	2008-07-12 23:41:48	2008-07-12 23:42:22	5236301	5236640	Ryan	PPS2 Triggered Run -- Just before turning the 300MHz signal on
+3448	Pal.	2008-07-12 23:43:17	2008-07-12 23:43:51	5236701	5237046	Ryan	PPS2 Triggered Run -- 300 MHz Signal into channel 1 of SURF 1
+3449	Pal.	2008-07-12 23:46:00	2008-07-12 23:46:26	5237101	5237355	Ryan	PPS2 Triggered Run -- 300 MHz Signal into channel 1 of SURF 1 -- Increased to 10dbM from 5dBm
+3450	Pal.	2008-07-13 00:01:21	2008-07-13 00:04:40	5237401	5239391	Ryan 	PPS2 Triggered Run -- 300 MHz Signal into channel 1 of  all SURFs -- Increased to 10dbM from 5dBm
+3451	Pal.	2008-07-13 00:07:04	2008-07-13 14:03:44	5239401	5740478	Ryan 	PPS2 Triggered Run -- 600 MHz Signal into channel 1 of  all SURFs -- Increased to 10dbM from 5dBm -- Hopefully will run all night
+3452	Pal.	NO ROOT FILE				Ryan	Taking 6000 events with CW at 100MHz into chan 1 of all SURFs
+3453	Pal.	NO ROOT FILE				Ryan	Taking 6000 events with CW at 100MHz into chan 1 of all SURFs
+3454	Pal.	2008-07-13 14:12:55	2008-07-13 14:22:56	5740501	5746491	Ryan	Taking 6000 events with CW at 100MHz into chan 1 of all SURFs --- Last two runs didn't work as the ramdisk had run out of inodes due to a problem with not deleting telemtered headers.
+3455	Pal.	2008-07-13 14:24:31	2008-07-13 14:34:31	5746501	5752491	Ryan	Taking 6000 events with CW at 200MHz into chan 1 of all SURFs --- 
+3456	Pal.	2008-07-13 14:48:39	2008-07-13 14:58:38	5752501	5758491	Ryan	Taking 6000 events with CW at 300MHz into chan 1 of all SURFs --- 
+3457	Pal.	2008-07-13 15:00:02	2008-07-13 15:10:10	5758501	5764491	Ryan	Taking 6000 events with CW at 400MHz into chan 1 of all SURFs --- 
+3458	Pal.	2008-07-13 15:19:17	2008-07-13 15:29:21	5764501	5770491	Ryan	Taking 6000 events with CW at 500MHz into chan 1 of all SURFs --- 
+3459	Pal.	2008-07-13 15:29:58	2008-07-13 15:40:00	5770501	5776491	Ryan	Taking 6000 events with CW at 600MHz into chan 1 of all SURFs --- 
+3460	Pal.	2008-07-13 15:42:59	2008-07-13 15:53:00	5776501	5782491	Ryan	Taking 6000 events with CW at 700MHz into chan 1 of all SURFs --- 
+3461	Pal.	2008-07-13 15:56:40	2008-07-13 16:06:39	5782501	5788491	Ryan	Taking 6000 events with CW at 800MHz into chan 1 of all SURFs --- 
+3462	Pal.	2008-07-13 16:19:22	2008-07-13 16:29:23	5788501	5794491	Ryan	Taking 6000 events with CW at 900MHz into chan 1 of all SURFs --- 
+3463	Pal.	2008-07-13 19:34:09	2008-07-13 19:34:46	5794501	5794870	Matt	test effScan -- phis 14,15&16 -- pid goals 12000,5000,5000,800
+3464	Pal.	2008-07-13 19:38:53	2008-07-13 19:39:25	5794901	5795220	Matt	test effScan -- phis 14,15&16 -- pid goals 12000,5000,5000,800
+3465	Pal.	NO ROOT FILE				Matt	test effScan -- phis 14,15&16 -- pid goals 12000,5000,5000,800
+3466	Pal.	NO ROOT FILE				Matt	test effScan -- phis 14,15&16 -- pid goals 12000,5000,5000,800
+3467	Pal.	2008-07-13 19:50:40	2008-07-13 19:51:04	5795301	5795519	Matt	test effScan -- phis 14,15&16 -- pid goals 12000,5000,5000,800
+3468	Pal.	2008-07-13 20:03:19	2008-07-13 20:04:06	5795601	5796385	Ryan	test effScan -- phis 14,15&16 -- pid goals 12000,5000,5000,800 -- Ext trig enabled
+3469	Pal.	NO ROOT FILE				Ryan	Threshold scan as SURF 7 has gone crazy
+3470	Pal.	NO ROOT FILE				Matt	Power Cycled Crate -- SURF 7 scalers messy before cycling
+3471	Pal.	2008-07-13 20:33:12	2008-07-13 20:33:23	5796401	5796570	Matt	effScan -- phis 14,15&16 -- Atten 33dB
+3472	Pal.	2008-07-13 20:33:51	2008-07-13 20:35:11	5796601	5797486	Matt	effScan -- phis 14,15&16 -- Atten 33dB
+3473	Pal.	NO ROOT FILE				Matt	test run -- threshold scan after reattaching sif cable 10 on surf 8
+3474	Pal.	2008-07-13 21:20:26	2008-07-13 21:21:46	5797501	5799491	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 33dB
+3475	Pal.	2008-07-13 21:23:31	2008-07-13 21:24:53	5799501	5801491	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 34dB
+3476	Pal.	2008-07-13 21:25:52	2008-07-13 21:26:59	5801501	5803491	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 35dB
+3477	Pal.	2008-07-13 21:28:16	2008-07-13 21:29:39	5803501	5805238	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 36dB
+3478	Pal.	2008-07-13 21:30:32	2008-07-13 21:31:56	5805501	5807287	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 37dB
+3479	Pal.	2008-07-13 21:32:48	2008-07-13 21:34:09	5807401	5809171	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 38dB
+3480	Pal.	2008-07-13 21:34:58	2008-07-13 21:36:17	5809301	5811122	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 39dB
+3481	Pal.	2008-07-13 21:37:10	2008-07-13 21:38:32	5811301	5813084	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 40dB
+3482	Pal.	2008-07-13 21:39:27	2008-07-13 21:40:57	5813101	5814967	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 41dB
+3483	Pal.	2008-07-13 21:41:51	2008-07-13 21:43:21	5815001	5816877	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 42dB
+3484	Pal.	2008-07-13 21:44:06	2008-07-13 21:45:13	5816901	5818891	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 43dB
+3485	Pal.	2008-07-13 21:47:05	2008-07-13 21:48:29	5818901	5820168	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 44dB
+3486	Pal.	2008-07-13 21:49:52	2008-07-13 21:51:19	5820201	5821422	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 45dB
+3487	Pal.	2008-07-13 21:52:35	2008-07-13 21:53:59	5821501	5822775	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 46dB
+3488	Pal.	2008-07-13 21:54:40	2008-07-13 21:55:59	5822801	5823887	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 47dB
+3489	Pal.	2008-07-13 21:58:57	2008-07-13 22:00:19	5823901	5825098	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 48dB
+3490	Pal.	2008-07-13 22:01:02	2008-07-13 22:02:28	5825101	5826291	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 49dB
+3491	Pal.	2008-07-13 22:03:26	2008-07-13 22:04:46	5826301	5827612	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 50dB
+3492	Pal.	2008-07-13 22:05:26	2008-07-13 22:06:48	5827701	5829063	Matt	effScan -- phis 14,15,16 (3dB extra on 14 & 16) -- 51dB
+3494	Pal.	NO ROOT FILE				Matt	effScan -- phis 14,15,16 -- surf 7 working??? -- 36dB
+3495	Pal.	NO ROOT FILE				Matt	Test run -- surf 7 fixed??? -- phis 14,15,16 -- 36dB
+3497	Pal.	NO ROOT FILE				Ryan	Hopefully this will be a long overnight run. The pulser is running at 36dB injecting signals into phi sectors 14,15,16. It will be interesting to see if SURF 7 dies again
+3498	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3501	Pal.	NO ROOT FILE				Ryan	Threshold scan
+3502	Pal.	NO ROOT FILE				Ryan	PPS Triggered Run
+3503	Pal.	NO ROOT FILE				Ryan	PPS Triggered run with the G12 running at 10Hz. At least possibly.
+3504	Pal.	NO ROOT FILE				Ryan	Testing Patricks new flip-flopping of the trigger out signal
+3505	Pal.	NO ROOT FILE				Ryan	Pushing dull data through the system for endless fun.
+3506	Pal.	NO ROOT FILE				Ryan	Overnight run
+3507	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3508	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3509	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3510	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3511	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3512	Pal.	NO ROOT FILE				Ryan	Test with insturment on
+3513	Pal.	NO ROOT FILE				Ryan	Test with insturment on -- playing iwth pid goals
+3514	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3515	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3516	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3517	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3518	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3519	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3520	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3521	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3522	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3523	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3524	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3525	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3526	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3527	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3528	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3529	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3530	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3531	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3532	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3533	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3534	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3535	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3536	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3537	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3538	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3539	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3540	Pal.	NO ROOT FILE				Matt	testing acqd data rate
+3541	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3542	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3543	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3544	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3545	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3547	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3548	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3549	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3550	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3553	Pal.	NO ROOT FILE				Rya	What the hell is fgoing on
+3554	Pal.	NO ROOT FILE				Rya	What the hell is going on????
+3556	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3557	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3558	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3559	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3560	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3561	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3562	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3563	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3564	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3565	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3567	Pal.	NO ROOT FILE				Ryan	Test run
+3568	Pal.	NO ROOT FILE				Ryan	Testing the new SURF firmware.
+3569	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3570	Pal.	NO ROOT FILE				Ryan	Mounted next satamini
+3571	Pal.	NO ROOT FILE				Ryan	First run with RFCMs turned on with the new version of the SURF firmware -- 071808_2 -- I reckon all triggers are bust
+3572	Pal.	NO ROOT FILE				Ryan	Everything good/bad
+3573	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3574	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3575	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3576	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3579	Pal.	NO ROOT FILE				Ryan	First test of the new SURF firmware version 071908_1, will the scalers behave. This run has the RFCMs and shorts off.
+3580	Pal.	NO ROOT FILE				Ryan	RFCMs and Shorts on. Will the scalers be steady???
+3581	Pal.	NO ROOT FILE				Ryan	RFCMs and Shorts on. Will the scalers be steady???
+3582	Pal.	NO ROOT FILE				Ryan	RFCMs and Shorts on. Will the scalers be steady???
+3584	Pal.	NO ROOT FILE				Ryan	Short test run before returning to flight mode
+3585	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3586	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3587	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3588	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3589	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3590	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3592	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3593	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3594	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3595	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3596	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3597	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3598	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3599	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3602	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3606	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3607	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3608	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3609	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3610	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3611	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3612	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3613	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3614	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3615	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3616	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3617	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3618	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3619	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3620	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3621	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3622	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3623	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3624	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3625	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3626	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3627	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3628	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3629	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3630	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3631	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3632	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3633	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3634	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3635	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3636	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3637	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3644	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3645	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3646	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3647	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3648	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3650	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3652	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3653	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3656	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3659	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3660	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3661	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3662	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3664	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3665	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3666	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3667	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3668	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3669	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3670	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3671	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3672	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3673	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3674	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3675	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3676	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3677	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3678	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3679	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3680	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3681	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3682	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3683	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3684	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3685	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3686	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3687	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3689	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3690	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3691	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3692	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3693	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3694	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3695	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3696	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3697	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3698	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3699	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3700	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3702	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3703	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3704	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3705	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3706	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3707	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3709	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3710	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3711	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3712	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3713	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3714	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3715	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3716	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3720	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3723	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3724	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3725	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3732	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3733	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3734	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3736	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3737	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3738	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3739	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3740	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3741	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3742	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3743	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3744	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3745	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3746	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3747	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3748	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3749	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3750	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3751	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3752	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3753	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3754	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3755	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3756	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3757	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3758	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3759	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3760	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3761	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3762	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3763	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3764	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3765	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3766	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3767	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3768	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3769	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3770	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3771	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3772	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3773	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3774	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3775	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3776	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3777	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3778	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3779	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3783	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3784	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3785	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3786	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3787	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3788	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3789	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3790	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3791	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3792	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3793	Pal.	2008-08-05 23:09:16	2008-08-05 23:19:31	27348801	27357434	Cmdd	  Started by Cmdd
+3794	Pal.	2008-08-05 23:20:13	2008-08-06 05:20:55	27358001	27782873	Cmdd	  Started by Cmdd
+3795	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3796	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3797	Pal.	2008-08-06 13:23:16	2008-08-06 14:26:56	28324101	28402699	Cmdd	  Started by Cmdd
+3798	Pal.	2008-08-06 14:28:10	2008-08-06 16:28:43	28404001	28555037	Cmdd	  Started by Cmdd
+3799	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3800	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3801	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3803	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3804	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3805	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3806	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3807	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3808	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3809	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3810	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3817	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3818	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3831	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3832	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3833	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3834	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3835	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3836	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3837	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3838	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3839	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3840	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3841	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3843	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3844	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3845	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3846	Pal.	2008-08-08 21:48:41	2008-08-08 23:48:56	31193001	31291670	Cmdd	  Started by Cmdd
+3847	Pal.	2008-08-08 23:49:13	2008-08-09 01:49:56	31291801	31346968	Cmdd	  Started by Cmdd
+3848	Pal.	2008-08-09 01:50:13	2008-08-09 03:50:56	31347101	31401831	Cmdd	  Started by Cmdd
+3849	Pal.	2008-08-09 03:51:15	2008-08-09 05:51:56	31401901	31456536	Cmdd	  Started by Cmdd
+3850	Pal.	2008-08-09 05:52:14	2008-08-09 07:52:55	31456601	31511019	Cmdd	  Started by Cmdd
+3851	Pal.	2008-08-09 07:53:13	2008-08-09 09:53:55	31511101	31564805	Cmdd	  Started by Cmdd
+3852	Pal.	2008-08-09 09:54:12	2008-08-09 11:54:56	31564901	31617472	Cmdd	  Started by Cmdd
+3853	Pal.	2008-08-09 11:55:14	2008-08-09 13:51:59	31617601	31722971	Cmdd	  Started by Cmdd
+3854	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3855	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3858	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3860	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3861	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3862	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3863	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3864	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
+3872	Pal.	NO ROOT FILE				Cmdd	  Started by Cmdd
