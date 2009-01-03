@@ -61,13 +61,21 @@ void makeLog(int startRun,int endRun){
   TTimeStamp endTime;
 
   mysql_init(&mysql);
-  connection =  mysql_real_connect(&mysql,"localhost","anita","S0uthP0l3","anita",0,0,0);
+  connection =  mysql_real_connect(&mysql,"localhost","anita","AniTa08","runLog",0,0,0);
   if(connection == NULL){
     cout << mysql_error(&mysql);
     return 1;
   }
 
-  for(int run=startRun;run<endRun+1;run++){
+  ifstream logFile;
+  sprintf(rawFileName,"/home/anita/anitaLog/runLog/runLog.txt");
+  logFile.open(rawFileName);
+
+  //for(int run=startRun;run<endRun+1;run++){
+  while(!logFile.eof()){
+
+    getline(logFile,logLine);
+
     
     sprintf(queryString,"SELECT * FROM runTable WHERE runNumber=run");
     query_state = mysql_query(connection,queryString);
@@ -82,29 +90,11 @@ void makeLog(int startRun,int endRun){
 
     //Get the run log from the raw data directories
     location = "Pal.";
-    sprintf(rawFileName,"/unix/anita2/testing/palestine/run%d/log/simpleLog.txt",run);
+    sprintf(rawFileName,"TBData........log/simpleLog.txt",run);
 
     struct stat stFileInfo;
     int intStat=0;
-    int palDir=0;
     intStat = stat(rawFileName,&stFileInfo);
-
-    if(intStat!=0){
-      sprintf(rawFileName,"/unix/anita2/palestine08/raw/run%d/log/simpleLog.txt",run);
-      intStat = stat(rawFileName,&stFileInfo);
-      if(intStat!=0){
-	sprintf(rawFileName,"/unix/anita2/palestine08/raw/run%d/log/simpleLog",run);
-      }
-      palDir=1;
-    }
-
-    intStat = stat(rawFileName,&stFileInfo);
-
-    if(intStat!=0){
-      sprintf(rawFileName,"/unix/anita2/testing/uh2008/run%d/log/simpleLog.txt",run);
-      location = "UH";
-      palDir=0;
-    }
 
     logFile.open(rawFileName);
     

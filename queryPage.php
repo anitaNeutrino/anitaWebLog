@@ -83,7 +83,7 @@ $textArraySize = count($textArray);
 
 $dbhost = "localhost";
 $dbuser = "anita";
-$dbpass = "S0uthP0l3";
+$dbpass = "AniTa08";
 $dbName = "anita";
 
 $selRunNumber = " ";
@@ -132,13 +132,13 @@ echo "<table cellpadding=10 cellspacing=1 border=1 width=100%>
 
 
 
-  mysql_connect($dbhost,$dbuser,$dbpass) or die(mysql_error());
-  mysql_select_db($dbName) or die(mysql_error());
+  pg_connect($dbhost,$dbuser,$dbpass) or die(pg_error());
+  pg_select_db($dbName) or die(pg_error());
 $runsFound=0;
 for($runNumber = $firstRun;$runNumber < $lastRun+1;$runNumber++){
 
-  $result = mysql_query("SELECT * FROM runTable WHERE runNumber=$runNumber");
-  $row = mysql_fetch_array($result);
+  $result = pg_query("SELECT * FROM runTable WHERE runNumber=$runNumber");
+  $row = pg_fetch_array($result);
 
   $location = $row['location'];
   $startTime = $row['startTime'];
