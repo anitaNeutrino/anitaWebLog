@@ -23,15 +23,11 @@ GLIBS         = $(ROOTGLIBS) $(SYSLIBS)
 #ROOT stuff
 
 
-all : makeLog updateRunLogDB
+all : makeLog 
 
 makeLog : makeLog
 	@echo "<**Compiling**> "  
 	$(LD)  $(CXXFLAGS) $(LDFLAGS) makeLog.$(SRCSUF)  $(LIBS) -o $@
-
-updateRunLogDB : updateRunLogDB
-	@echo "<**Compiling**> "  
-	$(LD)  $(CXXFLAGS) $(LDFLAGS) updateRunLogDB.$(SRCSUF)  $(LIBS) -o $@
 
 
 %.$(OBJSUF) : %.$(SRCSUF)

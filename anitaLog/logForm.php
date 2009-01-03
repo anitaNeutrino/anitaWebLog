@@ -20,6 +20,7 @@ Any errors:<br>
 <?php
 
 $runNumber = $_POST["runNumber"];
+$lastNumber = $_POST["lastNumber"];
 $name = $_POST["name"];
 $comment = $_POST["comment"];
 
@@ -39,15 +40,15 @@ if(!$runNumber){
 #open the sql database
 $dbhost = "localhost";
 $dbuser = "anita";
-$dbpass = "S0uthP0l3";
-$dbName = "anita";
+$dbpass = "AniTa08";
+$dbName = "runLog";
 
-mysql_connect($dbhost,$dbuser,$dbpass) or die (mysql_error());
-mysql_select_db($dbName) or die(mysql_error());
+pg_connect($dbhost,$dbuser,$dbpass) or die (pg_error());
+pg_select_db($dbName) or die(pg_error());
 
-$result = mysql_query("SELECT * FROM runTable WHERE runNumber=$runNumber") or die(mysql_error());
+$result = pg_query("SELECT * FROM runTable WHERE runNumber=$runNumber") or die(pg_error());
 
-$row = mysql_fetch_array($result);
+$row = pg_fetch_array($result);
 
 if(!$row) die("there is no entry for run '$runNumber'");
 
@@ -73,8 +74,8 @@ else{
 
 
 #finally submit this to the database
-mysql_query("UPDATE runTable SET logName='$newLoggedNames' WHERE runNumber='$runNumber'") or die(mysql_error());
-mysql_query("UPDATE runTable SET logComment='$newLoggedComments' WHERE runNumber='$runNumber'") or die(mysql_error());
+pg_query("UPDATE runTable SET logName='$newLoggedNames' WHERE runNumber='$runNumber'") or die(pg_error());
+pg_query("UPDATE runTable SET logComment='$newLoggedComments' WHERE runNumber='$runNumber'") or die(pg_error());
 
 
 
