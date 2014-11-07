@@ -32,7 +32,8 @@ pg_select_db($dbname) or die(pg_error());
 #remember to update the text file
 #$filename = "/home/mottram/work/anitaLog/runLog/runLog.txt";
 #$filename = "/unix/www/users/mottram/public_html/anitaLog/runLog/runLog.txt";
-$filename = "runLog.txt";
+#$filename = "runLog.txt";
+$filename = "/svr/www/anitaLog/runLog/runLog.txt";
 
 $filehandle = fopen ($filename,"r") or die(pg_error());
 

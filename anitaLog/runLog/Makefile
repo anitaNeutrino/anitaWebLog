@@ -11,9 +11,9 @@ SYSLIBS         =
 
 
 #Generic and Site Specific Flags
-CXXFLAGS     += $(ROOTCFLAGS) $(SYSINCLUDES)
-LDFLAGS      += -g $(ROOTLDFLAGS)
-LIBS          = $(ROOTLIBS) -lMinuit $(SYSLIBS) 
+CXXFLAGS     += $(ROOTCFLAGS) $(SYSINCLUDES) -I$(ANITA_UTIL_INSTALL_DIR)/include
+LDFLAGS      += -g $(ROOTLDFLAGS) -L$(ANITA_UTIL_INSTALL_DIR)/lib
+LIBS          = $(ROOTLIBS) -lMinuit $(SYSLIBS) -lAnitaEvent -lmysqlclient #-lMysql
 GLIBS         = $(ROOTGLIBS) $(SYSLIBS)
 
 
@@ -23,9 +23,13 @@ GLIBS         = $(ROOTGLIBS) $(SYSLIBS)
 #ROOT stuff
 
 
-all : makeLog 
+all : makeLog updateRunLogDB
 
-makeLog : makeLog
+updateRunLogDB: updateRunLogDB.cxx 
+	@echo "<**Compiling**> "  
+	$(LD)  $(CXXFLAGS) $(LDFLAGS) updateRunLogDB.$(SRCSUF) $(LIBS) -o $@
+
+makeLog : makeLog.cxx
 	@echo "<**Compiling**> "  
 	$(LD)  $(CXXFLAGS) $(LDFLAGS) makeLog.$(SRCSUF)  $(LIBS) -o $@
 
@@ -48,6 +52,7 @@ endif
 	cp  $(CLASS_HEADERS) $(ANITA_UTIL_INC_DIR)
 
 clean:
+	@rm -f makeLog
 	@rm -f *Dict*
 	@rm -f *.${OBJSUF}
 	@rm -f $(LIBRARY)

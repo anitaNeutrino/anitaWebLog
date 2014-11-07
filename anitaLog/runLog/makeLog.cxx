@@ -8,14 +8,25 @@
 #include "TSystem.h"
 #include "TTimeStamp.h"
 
+#include <cstdlib>
+
 using namespace std;
 
+
+/* Globals for the lazy */
+const char* antarctica14Dir = "/anitaStorage/antarctica14/";
+const char* palestine14Dir = "/anitaStorage/palestine14/";
+const char* logFilePath = "/home/radio/anitaLog/runLog/runLog.txt";
+
+
+
 void makeLog(int startRun,int endRun);
+int lookForFile(const char* fileName); /* 0 on success */
 
 int main(int argc,char **argv){
 
-  int start=2000;
-  int end=5000;
+  int start=10001;
+  int end=10006;
 
   if(argc>2){
     start=atoi(argv[1]);
@@ -30,8 +41,6 @@ void makeLog(int startRun,int endRun){
 
   char rootFileName[FILENAME_MAX];
   char rawFileName[FILENAME_MAX];
-  //char rootFileName[70];
-  //char rawFileName[70];
 
   UInt_t realTime;
   UInt_t eventNumber;
@@ -54,52 +63,39 @@ void makeLog(int startRun,int endRun){
   TTimeStamp beginTime;
   TTimeStamp endTime;
 
-  //ofstream runLogFile("/home/mottram/work/anitaLog/runLog2/runLog.txt");
-  ofstream runLogFile("/unix/www/users/mottram/public_html/anitaLog/runLog/runLog.txt");
+  ofstream runLogFile(logFilePath);\
+  /* Print header info */
+  runLogFile << "RUN\tLoc\tStart Time\t\tEnd Time\t\t1st Ev\tLast Ev\tUser\tEvent Description" << endl;
 
-  //runLogFile << "RUN\tLoc\tStart Time\t\tEnd Time\t\t1st Ev\tLast Ev\tUser\tEvent Description" << endl;
-
+  /* Now let's go after the data */
   for(int run=startRun;run<endRun+1;run++){
     
-    //cout << "on run " << run << endl;
-
     ifstream logFile;
 
     //Get the run log from the raw data directories
-    location = "Pal.";
-    sprintf(rawFileName,"/unix/anita2/testing/palestine/run%d/log/simpleLog.txt",run);
+    location = "Antarctica";
+    sprintf(rawFileName,"%s/raw/run%d/log/simpleLog.txt",antarctica14Dir, run);
 
-    struct stat stFileInfo;
-    int intStat=0;
-    int palDir=0;
-    intStat = stat(rawFileName,&stFileInfo);
+    int palDir = 0;
 
-    if(intStat!=0){
-      sprintf(rawFileName,"/unix/anita2/palestine08/raw/run%d/log/simpleLog.txt",run);
-      intStat = stat(rawFileName,&stFileInfo);
-      if(intStat!=0){
-	sprintf(rawFileName,"/unix/anita2/palestine08/raw/run%d/log/simpleLog",run);
-      }
+    int intStat = lookForFile(rawFileName);
+
+    if(intStat!=0){\
+      location = "Palestine";
+      sprintf(rawFileName,"%s/raw/run%d/log/simpleLog.txt",palestine14Dir,run);
+      intStat = lookForFile(rawFileName);
       palDir=1;
     }
 
-    intStat = stat(rawFileName,&stFileInfo);
-
-    if(intStat!=0){
-      sprintf(rawFileName,"/unix/anita2/testing/uh2008/run%d/log/simpleLog.txt",run);
-      location = "UH";
-      palDir=0;
-    }
-
     logFile.open(rawFileName);
-    
 
-    //if there is a log file then carry on, otherwise go to the next run
+    // If there is a log file then carry on, otherwise go to the next run.
     if(logFile){
       getline(logFile,nameLine);
       getline(logFile,dumpLine);
       getline(logFile,logLine);
 
+      /* Cut out input prompts from simpleLog for nice output log file. */
       logLine.erase (logLine.begin()+0);
       nameLine.erase (nameLine.begin()+0,nameLine.begin()+6);
 
@@ -107,17 +103,17 @@ void makeLog(int startRun,int endRun){
 
       //Get the event and times from the root file
       if(palDir==0){
-	sprintf(rootFileName,"/unix/anita2/testing/rootFiles/run%d/headFile%d.root",run,run);
+	sprintf(rootFileName,"%s/root/run%d/headFile%d.root",\
+		antarctica14Dir,run,run);
       }
       else{
-	sprintf(rootFileName,"/unix/anita2/palestine08/root/run%d/headFile%d.root",run,run);
+	sprintf(rootFileName,"%s/root/run%d/headFile%d.root",
+		palestine14Dir,run,run);
       }
 
-
-
+      /* Now look for ROOT files */
       if(!gSystem->GetPathInfo(rootFileName,exist)){
 	TFile *rootFile = new TFile(rootFileName);
-
         TTree *headTree = (TTree*)rootFile->Get("headTree");
 	headTree->SetMakeClass(1);
         headTree->SetBranchAddress("realTime",&realTime);
@@ -129,8 +125,6 @@ void makeLog(int startRun,int endRun){
         firstTime=realTime;
         firstEvent=eventNumber;
 
-	//cout << firstEvent << " " << realTime << endl;
-
         headTree->GetEntry(numEntries-1);
         lastTime=realTime;
         lastEvent=eventNumber;
@@ -139,8 +133,6 @@ void makeLog(int startRun,int endRun){
 	endTime.SetSec(lastTime);
 
         rootFile->Close();
-
-        //cout << nameLine << endl << logLine << endl;
 
         runLogFile << run << "\t" << location << "\t" << beginTime.AsString("s") << "\t" << endTime.AsString("s") << "\t" << firstEvent << "\t" << lastEvent << "\t" << nameLine << "\t" << logLine << endl;
 
@@ -151,10 +143,14 @@ void makeLog(int startRun,int endRun){
 
     
 
-    }//else
+    } // if logFile()
     
-  }//run
+  } // loop over runs
 
   runLogFile.close();
-
 }  
+
+int lookForFile(const char* fileName){
+  struct stat stFileInfo;
+  return stat(fileName,&stFileInfo);
+}
