@@ -7,15 +7,15 @@
 <meta name="generator" />
 <body bgColor=#BBDDFF><font face="Arial">
 
-<title>ANITA Run Database</title>
+<title>ANITA-3 Run Log Database</title>
 
 </head>
 <body>
 
-<h2>ANITA Run Database</h2>
-<p>Search the ANITA II run database on this page.</p> 
+<h2>ANITA-3 Run Log Database</h2>
+<p>Search the ANITA-3 run database on this page.</p> 
 
-<p>If you wish to add comments about specific runs, enter the information <a href="logForm.html">here</a>
+<p>If you wish to add comments about specific runs, enter the information <a href="logForm.html">here.</a></p>
 
 <hr />
 
@@ -32,13 +32,12 @@
 
         <tr>
 	  <td>First run</td>
-	  <td><input name =firstRun size=4 maxlength=4></td>
+	  <td><input name =firstRun size=10 maxlength=10></td>
 	</tr>
 	<tr>
 	  <td>Last run</td>
-	  <td><input name =lastRun size=4 maxlength=4></td>
+	  <td><input name =lastRun size=10 maxlength=10></td>
 	</tr>
-
       </table>
     </td>
 
@@ -66,9 +65,18 @@
 
   </tr>
   </table>
-  <br>
-  <input type="submit" value="Get Info">
+
+<p>Select location of run?<br /></p>
+<input type="checkbox" name="location[]" value="Antarctica" checked="checked"/>Antarctica<br />
+<input type="checkbox" name="location[]" value="Palestine" />Palestine/Hawaii<br /> 
+
+<p>Run order?<br /></p>
+<input type="radio" name="order" value="Ascending" />Ascending<br /> 
+<input type="radio" name="order" value="Descending" checked="checked"/>Descending<br />
+
+<input type="submit" value="Get Info">
 </form>
+
 
 
 </body>
