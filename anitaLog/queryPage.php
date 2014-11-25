@@ -32,11 +32,11 @@
 
         <tr>
 	  <td>First run</td>
-	  <td><input name =firstRun size=10 maxlength=10></td>
+	  <td><input name =firstRun size=10 maxlength=10 value="<?php echo $_POST["firstRun"]; ?>"></td>
 	</tr>
 	<tr>
 	  <td>Last run</td>
-	  <td><input name =lastRun size=10 maxlength=10></td>
+	  <td><input name =lastRun size=10 maxlength=10 value="<?php echo $_POST["lastRun"]; ?>"></td>
 	</tr>
       </table>
     </td>
@@ -47,7 +47,7 @@
 	  <td>Search run comments</td>
 	</tr>
 	<tr>
-	  <td><input name =textSearch size=22></td>
+	  <td><input name =textSearch size=22 value="<?php echo $_POST["textSearch"];?>"></td>
 	</tr>
       </table>
     </td>
@@ -58,7 +58,7 @@
 	  <td>Shifter Name</td>
 	</tr>
 	<tr>
-	  <td><input name =theShifter size=22></td>
+	  <td><input name =theShifter size=22 value="<?php echo $_POST["theShifter"];?>"></td>
 	</tr>
       </table>
     </td>
