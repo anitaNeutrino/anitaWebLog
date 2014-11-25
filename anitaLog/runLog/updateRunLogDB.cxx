@@ -8,9 +8,8 @@
 #include "TTree.h"
 #include "TSystem.h"
 #include "TTimeStamp.h"
-
+#include <algorithm>
 #include <cstdlib>
-
 
 using namespace std;
 
@@ -27,11 +26,12 @@ const char* logFilePath = "/home/radio/anitaLog/runLog/runLog.txt";
 int makeEntries(int startRun, int endRun);
 int lookForFile(const char* fileName);
 int lookForRootFile(const char* rootFileName, int run);
+string escape(const string& s, const char* toEscapePtr, const char* escapeByPtr);
 
 int main(int argc,char **argv){
 
   int start=10001;
-  int end=10006;
+  int end=11000;
 
   if(argc>2){
     start=atoi(argv[1]);
@@ -104,6 +104,13 @@ int makeEntries(int startRun, int endRun){
 	logFile.close();
 	continue;
       }
+
+      // Fucking sql piece of shit... you have to escape or remove all this bollocks...
+      replace(nameLine.begin(), nameLine.end(), '\\' , ' ');
+      replace(logLine.begin(), logLine.end(), '\\' , ' ');
+      nameLine = escape(nameLine, "'", "'");
+      logLine = escape(logLine, "'", "'");
+      
       logFile.close();
 
       //Get the event and times from the root file
@@ -125,16 +132,17 @@ int makeEntries(int startRun, int endRun){
       
       if(row==NULL){
 	/* Add everything from the log File*/      
-	printf("No row matching. Reading in log file information for run %d\n", run);
+	//printf("No row matching. Reading in log file information for run %d\n", run);
 	sprintf(queryString, "insert into runTable values ('%d', '%s', 'NO ROOT FILE', '', '', '', '%s', '%s', '', '')", run, location.c_str(), nameLine.c_str(), logLine.c_str());
-
-
 	
-	mysql_query(connection,queryString);
+	int retVal = mysql_query(connection,queryString);
+	if(retVal != 0){
+	  fprintf(stderr, "Something went wrong processing query %s\n", queryString);
+	}
       }
       else if(strcmp(row[2],"Of course not")==0){
 	/* Try to add ROOT information from the file */
-	printf("row[2] = %s\n", row[2]);
+	//printf("row[2] = %s\n", row[2]);
       }
       else{
 	/* Take no action! */
@@ -189,7 +197,7 @@ int lookForRootFile(const char* rootFileName, int run){
 
 
   if(!gSystem->GetPathInfo(rootFileName,exist)){
-    printf("Hey, I found a header file for run %d\n", run);
+    //    printf("Hey, I found a header file for run %d\n", run);
     TFile *rootFile = new TFile(rootFileName);
     
     TTree *headTree = (TTree*)rootFile->Get("headTree");
@@ -240,3 +248,19 @@ int lookForRootFile(const char* rootFileName, int run){
   }
   
 }
+
+
+string escape(const std::string& s, const char* toEscapePtr, const char* escapeByPtr){
+  /* Currently only does single chars */
+  
+  int n = s.size(), wp = 0;
+  vector<char> result(n*2);
+  for (int i=0; i<n; i++)
+    {
+      if (s[i] == toEscapePtr[0])
+	result[wp++] = escapeByPtr[0];
+      result[wp++] = s[i];
+    }
+  return string(&result[0], &result[wp]);
+}
+

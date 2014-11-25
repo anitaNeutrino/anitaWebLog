@@ -7,18 +7,17 @@
 <meta name="generator" />
 <body bgColor=#BBDDFF><font face="Arial">
 
-<title>ANITA Run Database</title>
+<title>ANITA-3 Run Database</title>
 
 </head>
 <body>
 
-<h2>ANITA Run Database</h2>
-<p>Search the ANITA II run database on this page.</p> 
+<h2>ANITA-3 Calibration/Testing Run Database</h2>
+<p>Search the ANITA-3 run database on this page.</p> 
 
-<p>If you wish to add comments about specific runs, enter the information <a href="logForm.html">here</a>.  Please check the current log for the run first though!
+<p>If you wish to add comments about specific runs, enter the information <a href="logForm.html">here</a>.</p>
 
 <hr />
-
 
 <form action="queryPage.php" method="post">
 
@@ -33,13 +32,12 @@
 
         <tr>
 	  <td>First run</td>
-	  <td><input name =firstRun size=4 maxlength=4></td>
+	  <td><input name =firstRun size=10 maxlength=10></td>
 	</tr>
 	<tr>
 	  <td>Last run</td>
-	  <td><input name =lastRun size=4 maxlength=4></td>
+	  <td><input name =lastRun size=10 maxlength=10></td>
 	</tr>
-
       </table>
     </td>
 
@@ -67,24 +65,39 @@
 
   </tr>
   </table>
-  <br>
-  <input type="submit" value="Get Info">
+
+<p>Select location of run?<br /></p>
+<input type="checkbox" name="location[]" value="Antarctica" checked="checked"/>Antarctica<br />
+<input type="checkbox" name="location[]" value="Palestine" />Palestine/Hawaii<br /> 
+
+<p>Run order?<br /></p>
+<input type="radio" name="order" value="Ascending" />Ascending<br /> 
+<input type="radio" name="order" value="Descending" checked="checked"/>Descending<br />
+
+<input type="submit" value="Get Info">
 </form>
 
 
 <?php
+error_reporting(E_ALL);
 $firstRun = $_POST["firstRun"];
 $lastRun = $_POST["lastRun"];
 $textSearch = $_POST["textSearch"];
 $theShifter = $_POST["theShifter"];
+
+$order = $_POST["order"];
+
+$aloc = $_POST["location"];
+$antLoc = $aloc[0];
+$palLoc = $aloc[1];
 
 $textArray = explode(" ",$textSearch);
 $textArraySize = count($textArray);
 
 $dbhost = "localhost";
 $dbuser = "anita";
-$dbpass = "AniTa08";
-$dbName = "anita";
+$dbpass = "IceRadi0";
+$dbName = "runLog";
 
 $selRunNumber = " ";
 $location = " ";
@@ -98,22 +111,116 @@ $logName = " ";
 $logComment = " ";
     
 if(!$firstRun && !$lastRun){
-  $firstRun=2000;
-  $lastRun=5000;
+  $firstRun=1;
+  $lastRun=19999;
 }
+
 if(!$lastRun){
-  $lastRun = $firstRun;
+//  $lastRun = $firstRun;
+  $lastRun = 19999;
 }
 if(!$firstRun){
-  $firstRun = $lastRun;
+//  $firstRun = $lastRun;
+  $firstRun = 0;
 }
 if($firstRun > $lastRun){
-  die('make sure first run is earlier than last run!');
+  die('Make sure first run is earlier than last run!');
 }
 if($theShifter){
   $findShifter=$theShifter;
 }
 
+  $link = mysql_connect('localhost', 'anita', 'IceRadi0') or die('Could not connect to server');
+  $db_selected = mysql_select_db('runLog', $link);
+
+  $runsFound=0;
+  $startRun=0;
+  $endRun=0;
+  $iterater=0;
+  if($order=="Ascending"){
+    $startRun=$firstRun;
+    $endRun=$lastRun;
+    $iterator=1;
+  }
+  else{
+    $startRun=$lastRun;
+    $endRun=$firstRun;
+    $iterator=-1;
+  }
+
+  $runNumber = $startRun-$iterator;
+  while($runNumber!=$endRun){
+    $runNumber += $iterator;
+    $result = mysql_query("SELECT * FROM runTable WHERE run=".$runNumber);
+      if($result != FALSE){
+        $row = mysql_fetch_array($result, MYSQL_NUM);
+        $location = $row[1];
+        $startTime = $row[2];
+        $endTime = $row[3];
+        $firstEvent = $row[4];
+        $lastEvent = $row[5];
+        $shifterName = $row[6];
+        $runDescription = $row[7];
+        $logName = $row[8];
+        $logComment = $row[9];
+
+        // Require location matching
+        if($location==$antLoc){
+        }
+        else if($location==$palLoc){
+        }
+        else{
+           continue;
+        }
+
+        $foundComment=1;
+  
+        if($textSearch){
+
+          for($textElement=0;$textElement<$textArraySize;$textElement++){
+             $foundCommentArray[$textElement]=0;
+	  }
+
+          $descriptionArray = explode(" ",$runDescription);
+          $commentArray = explode(" ",$logComment);
+
+          $arraySize = count($descriptionArray);
+          for($arrayElement=0;$arrayElement<$arraySize;$arrayElement++){
+            for($textElement=0;$textElement<$textArraySize;$textElement++){
+              if(strtolower($textArray[$textElement])==strtolower($descriptionArray[$arrayElement])){
+        	  $foundCommentArray[$textElement]=1;
+               }
+            }
+          }
+
+          $arraySize = count($commentArray);
+          for($arrayElement=0;$arrayElement<$arraySize;$arrayElement++){
+             for($textElement=0;$textElement<$textArraySize;$textElement++){
+               if(strtolower($textArray[$textElement])==strtolower($descriptionArray[$arrayElement])){
+         	  $foundCommentArray[$textElement]=1;
+               }
+             }
+          }
+
+    
+         for($textElement=0;$textElement<$textArraySize;$textElement++){
+            if($foundCommentArray[$textElement]==0){
+         	$foundComment=0;
+            }
+         }
+
+
+       } // if($textSearch)
+
+       if(!$theShifter){
+         $findShifter=$shifterName;
+       }
+    
+       if(!$row){
+       }
+       else if($foundComment==1 && strtolower($findShifter)==strtolower($shifterName)){
+         $runsFound++;
+if($runsFound==1){
 echo "<hr />";
 
 echo "<table cellpadding=10 cellspacing=1 border=1 width=100%>
@@ -129,76 +236,9 @@ echo "<table cellpadding=10 cellspacing=1 border=1 width=100%>
     <td width=5%>Log Name</td>
     <td width=15%>Log Entries</td>
   </tr>";
+}
 
-
-
-  pg_connect($dbhost,$dbuser,$dbpass) or die(pg_error());
-  pg_select_db($dbName) or die(pg_error());
-$runsFound=0;
-for($runNumber = $firstRun;$runNumber < $lastRun+1;$runNumber++){
-
-  $result = pg_query("SELECT * FROM runTable WHERE runNumber=$runNumber");
-  $row = pg_fetch_array($result);
-
-  $location = $row['location'];
-  $startTime = $row['startTime'];
-  $endTime = $row['endTime'];
-  $firstEvent = $row['firstEvent'];
-  $lastEvent = $row['lastEvent'];
-  $shifterName = $row['shifterName'];
-  $runDescription = $row['runDescription'];
-  $logName = $row['logName'];
-  $logComment = $row['logComment'];
-
-  $foundComment=1;
-  
-  if($textSearch){
-
-    for($textElement=0;$textElement<$textArraySize;$textElement++){
-      $foundCommentArray[$textElement]=0;
-    }
-
-    $descriptionArray = explode(" ",$runDescription);
-    $commentArray = explode(" ",$logComment);
-
-    $arraySize = count($descriptionArray);
-    for($arrayElement=0;$arrayElement<$arraySize;$arrayElement++){
-      for($textElement=0;$textElement<$textArraySize;$textElement++){
-        if(strtolower($textArray[$textElement])==strtolower($descriptionArray[$arrayElement])){
-	  $foundCommentArray[$textElement]=1;
-        }
-      }
-    }
-    $arraySize = count($commentArray);
-    for($arrayElement=0;$arrayElement<$arraySize;$arrayElement++){
-      for($textElement=0;$textElement<$textArraySize;$textElement++){
-        if(strtolower($textArray[$textElement])==strtolower($descriptionArray[$arrayElement])){
-	  $foundCommentArray[$textElement]=1;
-	}
-      }
-    }
-
-    
-    for($textElement=0;$textElement<$textArraySize;$textElement++){
-      if($foundCommentArray[$textElement]==0){
-	$foundComment=0;
-      }
-    }
-
-
-  }
-
-  if(!$theShifter){
-    $findShifter=$shifterName;
-  }
-    
-
-
-  if(!$row){
-  }
-  else if($foundComment==1 && strtolower($findShifter)==strtolower($shifterName)){
-    $runsFound++;
-    echo "
+       echo "
   <tr>
     <td width=3%>$runNumber</td>
     <td width=3%> $location</td>
@@ -213,38 +253,10 @@ for($runNumber = $firstRun;$runNumber < $lastRun+1;$runNumber++){
   </tr>";
   }
 }
+}
 
 if($runsFound==0){
-  echo "
-  <tr>
-    <td width=3%>$firstRun</td>
-    <td width=3%></td>
-    <td width=12%>No relevent runs</td>
-    <td width=12%>relax your search</td>
-    <td width=6%></td>
-    <td width=6%></td>
-    <td width=4%></td>
-    <td width=15%></td>
-    <td width=5%></td>
-    <td width=15%></td>
-  </tr>";
-  if(strcmp($firstRun,$lastRun)){
-    echo"
-  <tr>
-    <td width=3%>$lastRun</td>
-    <td width=3%></td>
-    <td width=12%></td>
-    <td width=12%></td>
-    <td width=6%></td>
-    <td width=6%></td>
-    <td width=4%> </td>
-    <td width=15%></td>
-    <td width=5%> </td>
-    <td width=15%></td>
-  </tr>
- 
-  ";
-  }
+  echo "<p>Sorry. No runs found matching your search criteria.<p/>";
 }
 
 echo "</table>";

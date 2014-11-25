@@ -6,11 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" />
 <body bgColor=#BBDDFF><font face="Arial">
-<meta HTTP-EQUIV="REFRESH" content="3; url=http://www.hep.ucl.ac.uk/~mottram/anitaLog/queryPage.php">
+
 </head>
 
 <body>
-You will now be redirected back to the query page.  Please check your log entry!
+<p> Click <a href="queryPage.html">here</a> to return to the query page</p>
 <br>
 Unless you want/need to fill another <a href="logForm.html">log form</a>
 <br>
@@ -20,15 +20,15 @@ Any errors:<br>
 <?php
 
 $runNumber = $_POST["runNumber"];
-$lastNumber = $_POST["lastNumber"];
+#//$lastNumber = $_POST["lastNumber"];
 $name = $_POST["name"];
 $comment = $_POST["comment"];
 
-$thingsToWrite = "\n\nLog Form:
-Run: $runNumber
-Logged by: $logName
-Comments: 
-$comment\n";
+//$thingsToWrite = "\n\nLog Form:
+//Run: $runNumber
+//Logged by: $logName
+//Comments: 
+//$comment\n";
 
 
 if(!$runNumber){
@@ -38,27 +38,30 @@ if(!$runNumber){
 //now to make the file
 
 #open the sql database
-$dbhost = "localhost";
-$dbuser = "anita";
-$dbpass = "AniTa08";
-$dbName = "runLog";
+#$dbhost = "localhost";
+#$dbuser = "anita";
+#$dbpass = "AniTa08";
+#$dbName = "runLog";
 
-pg_connect($dbhost,$dbuser,$dbpass) or die (pg_error());
-pg_select_db($dbName) or die(pg_error());
+//pg_connect($dbhost,$dbuser,$dbpass) or die (pg_error());
+//pg_select_db($dbName) or die(pg_error());
+$link = mysql_connect('localhost', 'anita', 'IceRadi0') or die('Could not connect to server');
+$db_selected = mysql_select_db('runLog', $link);
 
-$result = pg_query("SELECT * FROM runTable WHERE runNumber=$runNumber") or die(pg_error());
-
-$row = pg_fetch_array($result);
+$result = mysql_query("SELECT * FROM runTable WHERE run=".$runNumber);
+$row = mysql_fetch_array($result, MYSQL_NUM);
 
 if(!$row) die("there is no entry for run '$runNumber'");
 
-$logName = $row['logName'];
-$logComment = $row['logComment'];
+#$logName = $row['logName'];
+#$logComment = $row['logComment'];
+$logName = $row[8];
+$logComment = $row[9];
 
 if($logComment){
   $newLoggedComments = $logComment." ".$comment;
   if(strcasecmp($logName,$name)!=0){
-    $newLoggedNames = $logName." ".$name;
+    $newLoggedNames = $logName.", ".$name;
   }
   else{
     $newLoggedNames = $logName;
@@ -72,12 +75,9 @@ else{
 #$newLoggedNames = '';
 #$newLoggedComments = '';
 
-
 #finally submit this to the database
-pg_query("UPDATE runTable SET logName='$newLoggedNames' WHERE runNumber='$runNumber'") or die(pg_error());
-pg_query("UPDATE runTable SET logComment='$newLoggedComments' WHERE runNumber='$runNumber'") or die(pg_error());
-
-
+mysql_query("UPDATE `runTable` SET `commenter`='$newLoggedNames' WHERE `run`='$runNumber'") or die("Update failed.");
+$r2 = mysql_query("UPDATE `runTable` SET `comments`='$newLoggedComments' WHERE `run`='$runNumber'") or die("Update failed!");
 
 ?>
 
