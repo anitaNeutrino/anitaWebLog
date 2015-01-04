@@ -86,10 +86,15 @@ $textSearch = $_POST["textSearch"];
 $theShifter = $_POST["theShifter"];
 
 $order = $_POST["order"];
-
-$aloc = $_POST["location"];
-$antLoc = $aloc[0];
-$palLoc = $aloc[1];
+$aloc = array($_POST["location"]);
+$antLoc = 0;
+if(array_key_exists(0, $aloc)){
+    $antLoc = $aloc[0];
+}
+$palLoc = 0;
+if(array_key_exists(1, $aloc)){
+    $palLoc = $aloc[1];
+}
 
 $textArray = explode(" ",$textSearch);
 $textArraySize = count($textArray);
@@ -109,50 +114,49 @@ $shifterName = " ";
 $runDescription = " ";
 $logName = " ";
 $logComment = " ";
-    
+
 if(!$firstRun && !$lastRun){
-  $firstRun=1;
-  $lastRun=19999;
+    $firstRun=1;
+    $lastRun=19999;
 }
 
 if(!$lastRun){
-//  $lastRun = $firstRun;
-  $lastRun = 19999;
+    //  $lastRun = $firstRun;
+    $lastRun = 19999;
 }
 if(!$firstRun){
-//  $firstRun = $lastRun;
-  $firstRun = 0;
+    //  $firstRun = $lastRun;
+    $firstRun = 0;
 }
 if($firstRun > $lastRun){
-  die('Make sure first run is earlier than last run!');
+    die('Make sure first run is earlier than last run!');
 }
 if($theShifter){
-  $findShifter=$theShifter;
+    $findShifter=$theShifter;
 }
 
-  $link = mysql_connect('localhost', 'anita', 'IceRadi0') or die('Could not connect to server');
-  $db_selected = mysql_select_db('runLog', $link);
-
-  $runsFound=0;
-  $startRun=0;
-  $endRun=0;
-  $iterater=0;
-  if($order=="Ascending"){
+$link = mysql_connect('localhost', 'anita', 'IceRadi0') or die('Error! Could not connect to server');
+$db_selected = mysql_select_db('runLog', $link) or die('Error! Could not find database');
+$runsFound=0;
+$startRun=0;
+$endRun=0;
+$iterater=0;
+if($order=="Ascending"){
     $startRun=$firstRun;
     $endRun=$lastRun;
     $iterator=1;
-  }
-  else{
+}
+else{
     $startRun=$lastRun;
     $endRun=$firstRun;
     $iterator=-1;
-  }
+}
 
-  $runNumber = $startRun-$iterator;
-  while($runNumber!=$endRun){
+$runNumber = $startRun-$iterator;
+while($runNumber!=$endRun){
     $runNumber += $iterator;
     $result = mysql_query("SELECT * FROM runTable WHERE run=".$runNumber);
-      if($result != FALSE){
+    if($result != FALSE){
         $row = mysql_fetch_array($result, MYSQL_NUM);
         $location = $row[1];
         $startTime = $row[2];
@@ -170,60 +174,60 @@ if($theShifter){
         else if($location==$palLoc){
         }
         else{
-           continue;
+            continue;
         }
 
         $foundComment=1;
-  
+	
         if($textSearch){
 
-          for($textElement=0;$textElement<$textArraySize;$textElement++){
-             $foundCommentArray[$textElement]=0;
-	  }
-
-          $descriptionArray = explode(" ",$runDescription);
-          $commentArray = explode(" ",$logComment);
-
-          $arraySize = count($descriptionArray);
-          for($arrayElement=0;$arrayElement<$arraySize;$arrayElement++){
             for($textElement=0;$textElement<$textArraySize;$textElement++){
-              if(strtolower($textArray[$textElement])==strtolower($descriptionArray[$arrayElement])){
-        	  $foundCommentArray[$textElement]=1;
-               }
+		$foundCommentArray[$textElement]=0;
+	    }
+
+            $descriptionArray = explode(" ",$runDescription);
+            $commentArray = explode(" ",$logComment);
+
+            $arraySize = count($descriptionArray);
+            for($arrayElement=0;$arrayElement<$arraySize;$arrayElement++){
+		for($textElement=0;$textElement<$textArraySize;$textElement++){
+		    if(strtolower($textArray[$textElement])==strtolower($descriptionArray[$arrayElement])){
+        		$foundCommentArray[$textElement]=1;
+		    }
+		}
             }
-          }
 
-          $arraySize = count($commentArray);
-          for($arrayElement=0;$arrayElement<$arraySize;$arrayElement++){
-             for($textElement=0;$textElement<$textArraySize;$textElement++){
-               if(strtolower($textArray[$textElement])==strtolower($descriptionArray[$arrayElement])){
-         	  $foundCommentArray[$textElement]=1;
-               }
-             }
-          }
-
-    
-         for($textElement=0;$textElement<$textArraySize;$textElement++){
-            if($foundCommentArray[$textElement]==0){
-         	$foundComment=0;
+            $arraySize = count($commentArray);
+            for($arrayElement=0;$arrayElement<$arraySize;$arrayElement++){
+		for($textElement=0;$textElement<$textArraySize;$textElement++){
+		    if(strtolower($textArray[$textElement])==strtolower($descriptionArray[$arrayElement])){
+         		$foundCommentArray[$textElement]=1;
+		    }
+		}
             }
-         }
+
+	    
+            for($textElement=0;$textElement<$textArraySize;$textElement++){
+		if($foundCommentArray[$textElement]==0){
+         	    $foundComment=0;
+		}
+            }
 
 
-       } // if($textSearch)
+	} // if($textSearch)
 
-       if(!$theShifter){
-         $findShifter=$shifterName;
-       }
-    
-       if(!$row){
-       }
-       else if($foundComment==1 && strtolower($findShifter)==strtolower($shifterName)){
-         $runsFound++;
-if($runsFound==1){
-echo "<hr />";
+	if(!$theShifter){
+            $findShifter=$shifterName;
+	}
+	
+	if(!$row){
+	}
+	else if($foundComment==1 && strtolower($findShifter)==strtolower($shifterName)){
+            $runsFound++;
+	    if($runsFound==1){
+		echo "<hr />";
 
-echo "<table cellpadding=10 cellspacing=1 border=1 width=100%>
+		echo "<table cellpadding=10 cellspacing=1 border=1 width=100%>
   <tr>
     <td width=3%>Run</td>
     <td width=5%>Loc.</td>
@@ -236,9 +240,9 @@ echo "<table cellpadding=10 cellspacing=1 border=1 width=100%>
     <td width=5%>Log Name</td>
     <td width=15%>Log Entries</td>
   </tr>";
-}
+	    }
 
-       echo "
+	    echo "
   <tr>
     <td width=3%>$runNumber</td>
     <td width=3%> $location</td>
@@ -251,12 +255,12 @@ echo "<table cellpadding=10 cellspacing=1 border=1 width=100%>
     <td width=5%> $logName</td>
     <td width=15%> $logComment</td>
   </tr>";
-  }
-}
+	}
+    }
 }
 
 if($runsFound==0){
-  echo "<p>Sorry. No runs found matching your search criteria.<p/>";
+    echo "<p>Sorry. No runs found matching your search criteria.<p/>";
 }
 
 echo "</table>";
