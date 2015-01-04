@@ -20,33 +20,18 @@ Any errors:<br>
 <?php
 
 $runNumber = $_POST["runNumber"];
-#//$lastNumber = $_POST["lastNumber"];
 $name = $_POST["name"];
 $comment = $_POST["comment"];
-
-//$thingsToWrite = "\n\nLog Form:
-//Run: $runNumber
-//Logged by: $logName
-//Comments: 
-//$comment\n";
 
 
 if(!$runNumber){
   die('you must enter a run number!');
 }
 
-//now to make the file
-
-#open the sql database
-#$dbhost = "localhost";
-#$dbuser = "anita";
-#$dbpass = "AniTa08";
-#$dbName = "runLog";
-
 //pg_connect($dbhost,$dbuser,$dbpass) or die (pg_error());
 //pg_select_db($dbName) or die(pg_error());
-$link = mysql_connect('localhost', 'anita', 'IceRadi0') or die('Could not connect to server');
-$db_selected = mysql_select_db('runLog', $link);
+$link = mysql_connect('localhost', 'anita', 'IceRadi0') or die('Error! Could not connect to server');
+$db_selected = mysql_select_db('runLog', $link) or die('Error! Could not select database!');
 
 $result = mysql_query("SELECT * FROM runTable WHERE run=".$runNumber);
 $row = mysql_fetch_array($result, MYSQL_NUM);
