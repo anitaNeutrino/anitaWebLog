@@ -1,83 +1,120 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+	<title>ANITA-3 Calibration Run Log</title>
+	<link rel="stylesheet" type="text/css" href="logStyle.css">
+    </head>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" />
-<body bgColor=#BBDDFF><font face="Arial">
+    <div id="header_container">
+	<div id="header">
+	    <header>
 
-<title>ANITA-3 Run Log Database</title>
+		<h1>ANITA-3 Calibration Run Log</h1>
+		<form action="queryPage.php" method="post">
+		    <p>Enter search information (leave all fields blank to select all).
+		    </p>
+		    <table cellpadding=0 cellspacing=0 border=0 width="600" align center>
+			<tr>
+			    <td rowspan="3">
+				<table cellpadding=0 cellspacing=0 border=0 width="200" align left>
 
-</head>
-<body>
+				    <tr>
+					<td>First run</td>
+					<td><input name =firstRun size=10 maxlength=10></td>
+				    </tr>
+				    <tr>
+					<td>Last run</td>
+					<td><input name =lastRun size=10 maxlength=10></td>
+				    </tr>
+				</table>
+			    </td>
 
-<h2>ANITA-3 Run Log Database</h2>
-<p>Search the ANITA-3 run database on this page.</p> 
+			    <td rowspan="3">
+				<table cellpadding=0 cellspacing=0 border=0 width="200" align left>
+				    <tr>
+					<td>Run Description</td>
+				    </tr>
+				    <tr>
+					<td><input name =runDesc size=22></td>
+				    </tr>
+				</table>
+			    </td>
 
-<p>If you wish to add comments about specific runs, enter the information <a href="logForm.html">here.</a></p>
+			    <td rowspan="3">
+				<table cellpadding=0 cellspacing=0 border=0 width="200" align left>
+				    <tr>
+					<td>Shifter Name</td>
+				    </tr>
+				    <tr>
+					<td><input name =theShifter size=22></td>
+				    </tr>
+				</table>
+			    </td>
+			    <td rowspan="3">
+				<table cellpadding=0 cellspacing=0 border=0 width="200" align left>
+				    <tr>
+					<td>Comments By</td>
+				    </tr>
+				    <tr>
+					<td><input name =commentsBy size=22></td>
+				    </tr>
+				</table>
+			    </td>
+			    <td rowspan="3">
+				<table cellpadding=0 cellspacing=0 border=0 width="200" align left>
+				    <tr>
+					<td>Comments</td>
+				    </tr>
+				    <tr>
+					<td><input name =comments size=22></td>
+				    </tr>
+				</table>
+			    </td>
+			    <td rowspan="3">
+				<table cellpadding=0 cellspacing=0 border=0 width="200" allign left>
+				    <tr>
+					<td>Location</td>
+				    </tr>
+				    <tr>
+					<td>
+					    <select name="location">
+						<option value="All">All</option>
+						<option value="Antarctica">Antarctica</option> 
+						<option value="Palestine">Palestine/Hawaii</option>
+					    </select>
+					</td>
 
-<hr />
+				    </tr>
+				</table>
+			    </td>
 
-<form action="queryPage.php" method="post">
+			    <td rowspan="3">
+				<table cellpadding=0 cellspacing=0 border=0 width="200" allign left>
+				    <tr>
+					<td>Order</td>
+				    </tr>
+				    <tr>
+					<td>
+					    <select name="order">
+						<option value="descending">Descending</option> 
+						<option value="ascending">Ascending</option>
+					    </select>
+					</td>
 
-  <p>Which runs would you like information about (leave all fields blank to select all)?<br>
-  </p>
+				    </tr>
+				</table>
+			    </td>
+		    </table>
+		    <br/>
+		    <input type="submit" value="Search">
+		</form>
+	    </header>
+	</div>
+    </div>
 
-  <table cellpadding=0 bgcolor=#BBDDFF cellspacing=0 border=0 width="600" allign center>
-  <tr>
-
-    <td rowspan="3">
-      <table cellpadding=0 cellspacing=0 border=0 width="200" allign left>
-
-        <tr>
-	  <td>First run</td>
-	  <td><input name =firstRun size=10 maxlength=10></td>
-	</tr>
-	<tr>
-	  <td>Last run</td>
-	  <td><input name =lastRun size=10 maxlength=10></td>
-	</tr>
-      </table>
-    </td>
-
-    <td rowspan="3">
-      <table cellpadding=0 cellspacing=0 border=0 width="200" allign left>
-        <tr>
-	  <td>Search run comments</td>
-	</tr>
-	<tr>
-	  <td><input name =textSearch size=22></td>
-	</tr>
-      </table>
-    </td>
-
-    <td rowspan="3">
-      <table cellpadding=0 cellspacing=0 border=0 width="200" allign left>
-        <tr>
-	  <td>Shifter Name</td>
-	</tr>
-	<tr>
-	  <td><input name =theShifter size=22></td>
-	</tr>
-      </table>
-    </td>
-
-  </tr>
-  </table>
-
-<p>Select location of run?<br /></p>
-<input type="checkbox" name="location" value="Antarctica" checked="checked"/>Antarctica<br />
-<input type="checkbox" name="location" value="Palestine" />Palestine/Hawaii<br /> 
-
-<p>Run order?<br /></p>
-<input type="radio" name="order" value="Ascending" />Ascending<br /> 
-<input type="radio" name="order" value="Descending" checked="checked"/>Descending<br />
-
-<input type="submit" value="Get Info">
-</form>
-
-
-
-</body>
+    <body>
+	<p>Enter search terms above to generate results here</p>
+    </body>
 </html>

@@ -1,0 +1,19 @@
+/* Reset body padding and margins */
+body {
+    margin:0; 
+    padding: 200px 0 0 0; /* Keep body below header with top padding offset */
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+ 
+/* Make Header Sticky */
+#header_container { 
+    background:#eee; 
+    border:1px solid #666; 
+    height:200px; 
+    position:fixed; 
+    width:100%; 
+    top:0; }
+
+#header{
+    margin: 10px 10px;
+}
