@@ -4,14 +4,53 @@
 	<meta charset="UTF-8">
 	<title>ANITA-3 Calibration Run Log</title>
 	<link rel="stylesheet" type="text/css" href="logStyle.css">
-    </head>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="/jquery/jquery-1.3.2.min.js"></script>
+	<script>
+	 $(document).ready(function() {
+	     $(".commentSubmit").click(function(event){
+		 // Use button id...
+		 var buttonName = event.target.id;
 
+		 // ...to get form name
+		 var formSelectorName = '#' + buttonName.replace('Button', '');
+
+		 // Select correct form and submit using jQuery AJAX interface
+		 $.post('submitComments.php', $(formSelectorName).serialize()).done(function(data) {
+		     if(data.length > 0){ // Something went wrong
+			 alert(data);
+		     }
+		     else{ // Everything was fine so refresh page to show new database entry
+			 window.location.reload(true);
+		     }
+		 });
+	     });
+	 });
+	 
+	</script>
+
+	<script>
+	 function btn_click(runNumber) {
+	     var rowName = "commentRow" + runNumber;
+	     $('#'+rowName).fadeIn("slow");
+	     return false;
+	 }
+	 function btn_click2(runNumber) {
+	     var rowName = "commentRow" + runNumber;
+	     $('#'+rowName).fadeOut("slow");
+	     return false;
+	 }
+	</script>
+
+    </head>
     <div id="header_container">
 	<div id="header">
 	    <header>
 		<h1>ANITA-3 Calibration Run Log</h1>
 		<form action="queryPage.php" method="post">
 		    <p>Enter search information (leave all fields blank to select all).
+			<!-- Fancy spam reducing email encoding -->
+			Questions or comments? <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%62.%73%74%72%75%74%74.%31%32%40%75%63%6C.%61%63.%75%6B">Email me</a>.
 		    </p>
 		    <table cellpadding=0 cellspacing=0 border=0 width="600" align center>
 			<tr>
@@ -47,16 +86,6 @@
 				    </tr>
 				    <tr>
 					<td><input name =theShifter size=22 value="<?php echo $_POST["theShifter"];?>"></td>
-				    </tr>
-				</table>
-			    </td>
-			    <td rowspan="3">
-				<table cellpadding=0 cellspacing=0 border=0 width="200" align left>
-				    <tr>
-					<td>Comments By</td>
-				    </tr>
-				    <tr>
-					<td><input name =commentsBy size=22 value="<?php echo $_POST["commentsBy"];?>"></td>
 				    </tr>
 				</table>
 			    </td>
@@ -116,9 +145,20 @@
 	<?php
 	error_reporting(E_ALL);
 	$firstRun = $_POST["firstRun"];
+	if(strlen($firstRun)){
+	    if(!is_numeric($firstRun)){
+		die("Error! Run input must be numeric.");
+	    }
+	}
 	$lastRun = $_POST["lastRun"];
+	if(strlen($lastRun)){
+	    if(!is_numeric($lastRun)){
+		die("Error! Run input must be numeric.");
+	    }
+	}
+
+
 	$runDescSearch = $_POST["runDesc"];
-	$commentsBySearch = $_POST["commentsBy"];
 	$commentsSearch = $_POST["comments"];
 	$theShifter = $_POST["theShifter"];
 
@@ -141,7 +181,6 @@
 	$commentName = " ";
 	$comment = " ";
 
-	// Make connection to sql database
 	$link = mysql_connect('localhost', 'anita', 'IceRadi0') or die('Error! Could not connect to server.');
 	$db_selected = mysql_select_db('runLog', $link) or die('Error! Could not find database.');
 
@@ -185,8 +224,7 @@
 	    $lastEvent = $row[5];
 	    $shifterName = $row[6];
 	    $runDescription = $row[7];
-	    $commentName = $row[8];
-	    $comment = $row[9];
+	    $comment = $row[8];
 
 	    # By default there's a match
 	    $foundComment=1;
@@ -195,32 +233,24 @@
 
 	    # Shifter name match?
 	    if($theShifter){
-		if( !((strpos($shifterName, $theShifter) !== FALSE)) ){
+		if( !((strpos(strtolower($shifterName), strtolower($theShifter)) !== FALSE)) ){
 		    $foundComment=0;
 		}
 	    }
 
 	    # Run description match?
 	    if($runDescSearch){
-		if( !((strpos($runDescription, $runDescSearch) !== FALSE)) ){
-		    $foundComment=0;
-		}
-	    }
-
-	    # Comments by match?
-	    if($commentsBySearch){
-		if( !((strpos($commentName, $commentsBySearch) !== FALSE)) ){
+		if( !((strpos(strtolower($runDescription), strtolower($runDescSearch)) !== FALSE)) ){
 		    $foundComment=0;
 		}
 	    }
 
 	    # Comments by match?
 	    if($commentsSearch){
-		if( !((strpos($comment, $commentsSearch) !== FALSE)) ){
+		if( !((strpos(strtolower($comment), strtolower($commentsSearch)) !== FALSE)) ){
 		    $foundComment=0;
 		}
 	    }
-
 
 	    # Location match?
 	    if(!($location==$aloc || $aloc == "All")){
@@ -229,7 +259,7 @@
 
 	    # Run description match?
 	    if($runDescSearch){
-		if( !((strpos($runDescription, $runDescSearch) !== FALSE)) ){
+		if( !((strpos(strtolower($runDescription), strtolower($runDescSearch)) !== FALSE)) ){
 		    $foundComment=0;
 		}
 	    }
@@ -246,14 +276,14 @@
 
 		    echo "<table cellpadding=10 cellspacing=1 border=1 width=100%>
   <tr>
-    <td width=3%>Run</td>
+    <td width=4%>Run</td>
     <td width=5%>Loc.</td>
-    <td width=12%>Start Time</td>
-    <td width=12%>End Time</td>
-    <td width=4%>Shifter</td>
-    <td width=15%>Run Description</td>
-    <td width=5%>Comments By</td>
-    <td width=15%>Comments</td>
+    <td width=10%>Start Time</td>
+    <td width=10%>End Time</td>
+    <td width=5%>Shifter</td>
+    <td width=16%>Run Description</td>
+    <td width=23%>Comments</td>
+    <td width=5%>Add comment</td>
     <td width=6%>First Event</td>
     <td width=6%>Last Event</td>
   </tr>";
@@ -261,18 +291,30 @@
 
 		echo "
   <tr>
-    <td width=3%>$runNumber</td>
-    <td width=3%> $location</td>
-    <td width=12%> $startTime</td>
-    <td width=12%> $endTime</td>
-    <td width=4%> $shifterName</td>
-    <td width=15%> $runDescription</td>
-    <td width=5%> $commentName</td>
-    <td width=15%> $comment</td>
-    <td width=6%> $firstEvent</td>
-    <td width=6%> $lastEvent</td>
-
-  </tr>";
+    <td> $runNumber</td>
+    <td> $location</td>
+    <td> $startTime</td>
+    <td> $endTime</td>
+    <td> $shifterName</td>
+    <td> $runDescription</td>
+    <td> $comment</td>
+    <td> <button onclick=\"btn_click($runNumber);\"> Add Comment</button>
+    <td> $firstEvent</td>
+    <td> $lastEvent</td>
+  </tr>";		
+		echo "
+  <tr id=\"commentRow$runNumber\" style=\"display: none\">
+    <form id=\"commentForm$runNumber\"action=\"submitComments.php\" method=\"post\" onsubmit=\"return confirm('Really add comment to run $runNumber?')\">
+      <td> <input name=\"runNumber\" value=\"$runNumber\" style=\"display: none\">Name:</td>
+      <td> <input name=\"commentsBy\" style=\"display:table-cell; width:100%\">
+      <td> Comment:</td>
+      <td colspan=\"5\"> <input name=\"comment\" style=\"display:table-cell; width:100%\" length=\"9999\">
+      <!-- <td> <input type=\"submit\" value=\"Submit\"> -->
+      <td> <input id=\"commentFormButton$runNumber\" type=\"button\" value=\"Submit\" class=\"commentSubmit\">
+    </form>
+      <td> <button onclick=\"btn_click2($runNumber);\">Cancel</button>
+  </tr>
+";
 	    }
 	}
 	if($runsFound==0){
@@ -281,6 +323,5 @@
 
 	echo "</table>";
 	?>
-
     </body>
 </html>

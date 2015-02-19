@@ -17,3 +17,7 @@ body {
 #header{
     margin: 10px 10px;
 }
+
+#hidden{
+    display: none;
+}
