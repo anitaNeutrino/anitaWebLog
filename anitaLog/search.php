@@ -47,7 +47,7 @@
 	<div id="header">
 	    <header>
 		<h1>ANITA-3 Calibration Run Log</h1>
-		<form action="queryPage.php" method="post">
+		<form action="search.php" method="post">
 		    <p>Enter search information (leave all fields blank to select all).
 			<!-- Fancy spam reducing email encoding -->
 			Questions or comments? <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%62.%73%74%72%75%74%74.%31%32%40%75%63%6C.%61%63.%75%6B">Email me</a>.
@@ -181,8 +181,20 @@
 	$commentName = " ";
 	$comment = " ";
 
-	$link = mysql_connect('localhost', 'anita', 'IceRadi0') or die('Error! Could not connect to server.');
-	$db_selected = mysql_select_db('runLog', $link) or die('Error! Could not find database.');
+	$tableName = "runTable";
+	$dbhost = "localhost";
+	$dbuser = "anita";
+	$dbpass = "S0uthP0l3";
+	$dbName = "anita";
+
+
+	#$link = mysql_connect('localhost', 'anita', 'IceRadi0') or die('Error! Could not connect to server.');
+	#$link = mysql_connect('localhost', 'anita', 's0uthPol3') or die('Error! Could not connect to server.');
+	#$db_selected = mysql_select_db('runLog', $link) or die('Error! Could not find database.');
+
+	$link = mysql_connect($dbhost, $dbuser, $dbpass) or die('Error! Could not connect to server');
+	$db_selected = mysql_select_db($dbName, $link) or die('Error! Could not connect to database');
+
 
 	if(!$lastRun){
 	    $lastRun = 9999999999; # For now...
@@ -214,8 +226,10 @@
 	    $iterator=-1;
 	}
 
+
 	$result = mysql_query("SELECT * FROM runTable WHERE run>=$firstRun AND run<=$lastRun ORDER BY run $orderCommand");
-	while($row = mysql_fetch_assoc($result, MYSQL_NUM)){
+
+	while($row = mysql_fetch_row($result)){
 	    $runNumber = $row[0];
 	    $location = $row[1];
 	    $startTime = $row[2];

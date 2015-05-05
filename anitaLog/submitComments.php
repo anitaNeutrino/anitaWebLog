@@ -17,8 +17,16 @@ if(strlen($comment)==0){
     die('Error! Comment input blank.');
 }
 
-$link = mysql_connect('localhost', 'anita', 'IceRadi0') or die('Error! Could not connect to server');
-$db_selected = mysql_select_db('runLog', $link) or die('Error! Could not select database!');
+$tableName = "runTable";
+$dbhost = "localhost";
+$dbuser = "anita";
+$dbpass = "S0uthP0l3";
+$dbName = "anita";
+
+
+$link = mysql_connect($dbhost, $dbuser, $dbpass) or die('Error! Could not connect to server');
+$db_selected = mysql_select_db($dbName, $link) or die('Error! Could not connect to database');
+
 
 $result = mysql_query("SELECT * FROM runTable WHERE run=".$runNumber);
 $row = mysql_fetch_array($result, MYSQL_NUM);
