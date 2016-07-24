@@ -2,7 +2,7 @@
 <html>
     <head>
 	<meta charset="UTF-8">
-	<title>ANITA-3 Calibration Run Log</title>
+	<title>ANITA-4 Calibration Run Log</title>
 	<link rel="stylesheet" type="text/css" href="logStyle.css">
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="/jquery/jquery-1.3.2.min.js"></script>
@@ -46,7 +46,7 @@
     <div id="header_container">
 	<div id="header">
 	    <header>
-		<h1>ANITA-3 Calibration Run Log</h1>
+		<h1>ANITA-4 Calibration Run Log</h1>
 		<form action="search.php" method="post">
 		    <p>Enter search information (leave all fields blank to select all).
 			<!-- Fancy spam reducing email encoding -->
