@@ -167,7 +167,7 @@
 
 	$dbhost = "localhost";
 	$dbuser = "anita";
-	$dbpass = "IceRadi0";
+	$dbpass = "PoorPass";
 	$dbName = "runLog";
 
 	$selRunNumber = " ";
@@ -184,16 +184,16 @@
 	$tableName = "runTable";
 	$dbhost = "localhost";
 	$dbuser = "anita";
-	$dbpass = "S0uthP0l3";
+	$dbpass = "S0uthP0l";
 	$dbName = "anita";
 
 
-	#$link = mysql_connect('localhost', 'anita', 'IceRadi0') or die('Error! Could not connect to server.');
-	#$link = mysql_connect('localhost', 'anita', 's0uthPol3') or die('Error! Could not connect to server.');
-	#$db_selected = mysql_select_db('runLog', $link) or die('Error! Could not find database.');
+	#$link = mysqli_connect('localhost', 'anita', 'PoorPass') or die('Error! Could not connect to server.');
+	#$link = mysqli_connect('localhost', 'anita', 's0uthPol3') or die('Error! Could not connect to server.');
+	#$db_selected = mysqli_select_db($link,'runLog') or die('Error! Could not find database.');
 
-	$link = mysql_connect($dbhost, $dbuser, $dbpass) or die('Error! Could not connect to server');
-	$db_selected = mysql_select_db($dbName, $link) or die('Error! Could not connect to database');
+	$link = mysqli_connect($dbhost, $dbuser, $dbpass) or die('Error! Could not connect to server');
+	$db_selected = mysqli_select_db($link,$dbName) or die('Error! Could not connect to database');
 
 
 	if(!$lastRun){
@@ -227,9 +227,9 @@
 	}
 
 
-	$result = mysql_query("SELECT * FROM runTable WHERE run>=$firstRun AND run<=$lastRun ORDER BY run $orderCommand");
+	$result = mysqli_query($link,"SELECT * FROM runTable WHERE run>=$firstRun AND run<=$lastRun ORDER BY run $orderCommand");
 
-	while($row = mysql_fetch_row($result)){
+	while($row = mysqli_fetch_row($result)){
 	    $runNumber = $row[0];
 	    $location = $row[1];
 	    $startTime = $row[2];

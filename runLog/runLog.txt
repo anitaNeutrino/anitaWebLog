@@ -1,6 +1,0 @@
-RUN	Loc	Start Time		End Time		1st Ev	Last Ev	User	Event Description
-10001	Antarctica	NO ROOT FILE				RJN	First run in Antarctica 2014. Should have PPS and soft triggers enabled. Currently there are no external RF components (AMPAs, etc.)  hooked up to the instrument. Should be a nice dull run.
-10002	Antarctica	2014-11-04 03:14:28	2014-11-04 03:14:31	1401	1435	RJN	Second run in antarctica. Should still be dull.
-10003	Antarctica	2014-11-04 04:15:19	2014-11-04 04:31:14	16001	28672	RJN	New run with fixed?? starting of the GPU-based Prioritizerd
-10005	Antarctica	2014-11-04 19:32:34	2014-11-04 20:25:06	28801	67200	BRotter	Checking how the system performs for longish periods.  Waiting for Ryan to get out to LDB since he is late.  Crate sitting idle for last night.
-10006	Antarctica	2014-11-04 21:10:24	2014-11-04 22:11:33	67401	111688	BRotter	So when the ssh connection drops out, the run stops.  I want to see glitches on the power monitor and I don't see any which is good!

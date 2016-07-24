@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" />
+<body bgColor=#BBDDFF><font face="Arial">
+
+<title>ANITA-3 Run Log Database</title>
+
+</head>
+<body>
+
+<h2>ANITA-3 Run Log Database</h2>
+<p>Search the ANITA-3 run database on this page.</p> 
+
+<p>If you wish to add comments about specific runs, enter the information <a href="logForm.html">here.</a></p>
+
+<hr />
+
+<form action="queryPage.php" method="post">
+
+  <p>Which runs would you like information about (leave all fields blank to select all)?<br>
+  </p>
+
+  <table cellpadding=0 bgcolor=#BBDDFF cellspacing=0 border=0 width="600" allign center>
+  <tr>
+
+    <td rowspan="3">
+      <table cellpadding=0 cellspacing=0 border=0 width="200" allign left>
+
+        <tr>
+	  <td>First run</td>
+	  <td><input name =firstRun size=10 maxlength=10></td>
+	</tr>
+	<tr>
+	  <td>Last run</td>
+	  <td><input name =lastRun size=10 maxlength=10></td>
+	</tr>
+      </table>
+    </td>
+
+    <td rowspan="3">
+      <table cellpadding=0 cellspacing=0 border=0 width="200" allign left>
+        <tr>
+	  <td>Search run comments</td>
+	</tr>
+	<tr>
+	  <td><input name =textSearch size=22></td>
+	</tr>
+      </table>
+    </td>
+
+    <td rowspan="3">
+      <table cellpadding=0 cellspacing=0 border=0 width="200" allign left>
+        <tr>
+	  <td>Shifter Name</td>
+	</tr>
+	<tr>
+	  <td><input name =theShifter size=22></td>
+	</tr>
+      </table>
+    </td>
+
+  </tr>
+  </table>
+
+<p>Select location of run?<br /></p>
+<input type="checkbox" name="location[]" value="Antarctica" checked="checked"/>Antarctica<br />
+<input type="checkbox" name="location[]" value="Palestine" />Palestine/Hawaii<br /> 
+
+<p>Run order?<br /></p>
+<input type="radio" name="order" value="Ascending" />Ascending<br /> 
+<input type="radio" name="order" value="Descending" checked="checked"/>Descending<br />
+
+<input type="submit" value="Get Info">
+</form>
+
+
+
+</body>
+</html>

@@ -7,8 +7,8 @@ if(!is_numeric($runNumber)){
     die("Error! Run input must be numeric.");
 }
 
-//$name = mysql_real_escape_string($name);
-//$comment = mysql_real_escape_string($comment);
+//$name = mysqli_real_escape_string($name);
+//$comment = mysqli_real_escape_string($comment);
 
 if(strlen($name)==0){
     die('Error! Name input blank.');
@@ -24,12 +24,12 @@ $dbpass = "S0uthP0l3";
 $dbName = "anita";
 
 
-$link = mysql_connect($dbhost, $dbuser, $dbpass) or die('Error! Could not connect to server');
-$db_selected = mysql_select_db($dbName, $link) or die('Error! Could not connect to database');
+$link = mysqli_connect($dbhost, $dbuser, $dbpass) or die('Error! Could not connect to server');
+$db_selected = mysqli_select_db($link,$dbName) or die('Error! Could not connect to database');
 
 
-$result = mysql_query("SELECT * FROM runTable WHERE run=".$runNumber);
-$row = mysql_fetch_array($result, MYSQL_NUM);
+$result = mysqli_query($link,"SELECT * FROM runTable WHERE run=".$runNumber);
+$row = mysqli_fetch_array($result, MYSQLI_NUM);
 
 // Shouldn't get this one
 if(!$row) die("Error! There is no entry for run $runNumber");
@@ -44,8 +44,8 @@ else{
     $newLoggedComments = "<table style=\"table-layout: fixed; word-wrap:break-word; border-spacing:0.5em;\" cellspacing=1 width=100%><tr><td width=25%>".$name."</td><td width=75%>".$comment."</td></tr></table>";
 }
 
-$newLoggedComments = mysql_real_escape_string($newLoggedComments);
+$newLoggedComments = mysqli_real_escape_string($newLoggedComments);
 
 #finally submit this to the database
-$r = mysql_query("UPDATE `runTable` SET `comments`='$newLoggedComments' WHERE `run`='$runNumber'") or die("Error! Could not complete SQL update.");
+$r = mysqli_query($link,"UPDATE `runTable` SET `comments`='$newLoggedComments' WHERE `run`='$runNumber'") or die("Error! Could not complete SQL update.");
 ?>

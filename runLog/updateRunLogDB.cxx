@@ -19,9 +19,9 @@ MYSQL_ROW row;
 int query_state;
 
 /* Globals for the lazy */
-const char* antarctica14Dir = "/anitaStorage/antarctica14/";
-const char* palestine14Dir = "/anitaStorage/palestine14/";
-const char* logFilePath = "/home/radio/anitaLog/runLog/runLog.txt";
+const char* antarctica16Dir = "/data/antarctica2016/";
+const char* palestine16Dir = "/data/palestine2016/";
+const char* logFilePath = "/home/anita/anitaWebLog/runLog/runLog.txt";
 
 int makeEntries(int startRun, int endRun);
 int lookForFile(const char* fileName);
@@ -30,8 +30,8 @@ string escape(const string& s, const char* toEscapePtr, const char* escapeByPtr)
 
 int main(int argc,char **argv){
 
-  int start=10001;
-  int end=11000;
+  int start=1000;
+  int end=2000;
 
   if(argc>2){
     start=atoi(argv[1]);
@@ -70,7 +70,7 @@ int makeEntries(int startRun, int endRun){
 
     /* Try antarctica first */
     location = "Antarctica";
-    sprintf(rawFileName,"%s/raw/run%d/log/simpleLog.txt",antarctica14Dir, run);
+    sprintf(rawFileName,"%s/raw/run%d/log/simpleLog.txt",antarctica16Dir, run);
 
     int palDir = 0;
 
@@ -79,7 +79,7 @@ int makeEntries(int startRun, int endRun){
     /* Then try Palestine */
     if(intStat!=0){\
       location = "Palestine";
-      sprintf(rawFileName,"%s/raw/run%d/log/simpleLog.txt",palestine14Dir,run);
+      sprintf(rawFileName,"%s/raw/run%d/log/simpleLog.txt",palestine16Dir,run);
       intStat = lookForFile(rawFileName);
       palDir=1;
     }
@@ -116,11 +116,11 @@ int makeEntries(int startRun, int endRun){
       //Get the event and times from the root file
       if(palDir==0){
 	sprintf(rootFileName,"%s/root/run%d/headFile%d.root",\
-		antarctica14Dir,run,run);
+		antarctica16Dir,run,run);
       }
       else{
 	sprintf(rootFileName,"%s/root/run%d/headFile%d.root",
-		palestine14Dir,run,run);
+		palestine16Dir,run,run);
       }
 
 
@@ -151,12 +151,13 @@ int makeEntries(int startRun, int endRun){
       
       
       /* Here we look for the ROOT file */
-      sprintf(rootFileName,"%s/root/run%d/headFile%d.root",antarctica14Dir,run,run);
+      sprintf(rootFileName,"%s/root/run%d/headFile%d.root",antarctica16Dir,run,run);
       
       if(lookForRootFile(rootFileName, run)!=0){
-	sprintf(rootFileName,"%s/root/run%d/headFile%d.root",palestine14Dir,run,run);
+	sprintf(rootFileName,"%s/root/run%d/headFile%d.root",palestine16Dir,run,run);
 	lookForRootFile(rootFileName, run);
-	fprintf(stderr, "Unable to locate ROOT file in either %s or %s.\n", antarctica14Dir, palestine14Dir);
+	std::cout << rootFileName << "\n";
+	fprintf(stderr, "Unable to locate ROOT file in either %s or %s.\n", antarctica16Dir, palestine16Dir);
       }
 
       logFile.close();

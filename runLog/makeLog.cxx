@@ -14,9 +14,10 @@ using namespace std;
 
 
 /* Globals for the lazy */
-const char* antarctica14Dir = "/anitaStorage/antarctica14/";
+const char* antarctica16Dir = "/anitaStorage/antarctica2016/";
 const char* palestine14Dir = "/anitaStorage/palestine14/";
-const char* logFilePath = "/home/radio/anitaLog/runLog/runLog.txt";
+const char* palestine16Dir = "/data/palestine2016/";
+const char* logFilePath = "/home/anita/Code/anitaWebLog/runLog/runLog.txt";
 
 
 
@@ -25,8 +26,8 @@ int lookForFile(const char* fileName); /* 0 on success */
 
 int main(int argc,char **argv){
 
-  int start=10001;
-  int end=10006;
+  int start=1000;
+  int end=2000;
 
   if(argc>2){
     start=atoi(argv[1]);
@@ -74,7 +75,7 @@ void makeLog(int startRun,int endRun){
 
     //Get the run log from the raw data directories
     location = "Antarctica";
-    sprintf(rawFileName,"%s/raw/run%d/log/simpleLog.txt",antarctica14Dir, run);
+    sprintf(rawFileName,"%s/raw/run%d/log/simpleLog.txt",antarctica16Dir, run);
 
     int palDir = 0;
 
@@ -82,7 +83,7 @@ void makeLog(int startRun,int endRun){
 
     if(intStat!=0){\
       location = "Palestine";
-      sprintf(rawFileName,"%s/raw/run%d/log/simpleLog.txt",palestine14Dir,run);
+      sprintf(rawFileName,"%s/raw/run%d/log/simpleLog.txt",palestine16Dir,run);
       intStat = lookForFile(rawFileName);
       palDir=1;
     }
@@ -104,11 +105,11 @@ void makeLog(int startRun,int endRun){
       //Get the event and times from the root file
       if(palDir==0){
 	sprintf(rootFileName,"%s/root/run%d/headFile%d.root",\
-		antarctica14Dir,run,run);
+		antarctica16Dir,run,run);
       }
       else{
 	sprintf(rootFileName,"%s/root/run%d/headFile%d.root",
-		palestine14Dir,run,run);
+		palestine16Dir,run,run);
       }
 
       /* Now look for ROOT files */
